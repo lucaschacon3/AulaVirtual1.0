@@ -1,0 +1,32 @@
+// Styles common to every page, except login
+$colors: (
+  "primary": #b20a0a,
+  "secondary": #4c0404,
+  "white": rgba(217, 217, 217, 0.83),
+);
+
+$padding: 50px;
+
+@mixin border-radius {
+  border-radius: 15px;
+}
+
+body {
+  background-image: url("../img/background.png");
+  margin: 0;
+  padding: $padding;
+
+  > div {
+    border: 1px solid hsl(0, 0%, 0%);
+    @include border-radius;
+  }
+}
+
+#container {
+  background-color: map-get($map: $colors, $key: "white");
+  padding: $padding;
+}
+
+#header {
+  border-bottom: 1px solid black;
+}

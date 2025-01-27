@@ -1,24 +1,18 @@
-#contenedor{
-    margin: auto;
-    text-align: center;
-    height: 500px;
-    width: 500px;
-    border: solid black 2px;
-    border-radius: 10px;
-    background-color: white;
-    opacity: 0.9;
-    color: black;
+body {
+  background-image: url("../img/background.png");
+  margin: 0;
+  padding: 50px;
 }
-body{
-    
-    background-image: url(image.png);
-    font-family: system-ui;
+body > div {
+  border: 1px solid hsl(0, 0%, 0%);
+  border-radius: 15px;
 }
 
-button{
-    background-color: red;
-    border-radius: 15px;
-    width: 100px;
-    height: 40px;
-    color: white;
+#container {
+  background-color: rgba(217, 217, 217, 0.83);
+  padding: 50px;
 }
+
+#header {
+  border-bottom: 1px solid black;
+}/*# sourceMappingURL=index.css.map */
