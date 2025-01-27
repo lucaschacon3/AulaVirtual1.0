@@ -1,24 +1,19 @@
-#contenedor{
-    margin: auto;
-    text-align: center;
-    height: 500px;
-    width: 500px;
-    border: solid black 2px;
-    border-radius: 10px;
-    background-color: white;
-    opacity: 0.9;
-    color: black;
-}
 body{
     
-    background-image: url(image.png);
+    background-image: url(../img/fondo1.png);
     font-family: system-ui;
 }
 
-button{
-    background-color: red;
-    border-radius: 15px;
-    width: 100px;
-    height: 40px;
-    color: white;
+#logo{
+    background-image: url(../img/logo.png);
+    width: 120px;         /* Ancho de la caja */
+    height: 50px;        /* Alto de la caja */
+
+    background-repeat: no-repeat;  /* No repetir la imagen */
+    background-size: cover;       /* La imagen cubre toda el área de la caja */
+    background-position: center;  /* Centra la imagen en la caja */
+  
 }
+
+
+

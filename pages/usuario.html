@@ -1,22 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula virtual</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <div id="contenedor">
-        <h2>Usuario</h2>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula Virtual</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+  <body class="bg-gray-100 min-h-screen">
+    <!-- Contenedor principal -->
+    <div class="container mx-auto p-6">
+      <header
+        class="flex items-center justify-between bg-white p-4 rounded-lg shadow-md mb-6"
+      >
+        <div id="logo"></div>
+        <p class="text-gray-600">
+          Bienvenido, <span class="font-semibold">Usuario</span>
+        </p>
+      </header>
 
-        <h3>Info del usuario</h3>
+      <!-- Contenido principal -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Barra de progreso del curso -->
+        <section class="lg:col-span-1 bg-white p-4 rounded-lg shadow-md">
+          <h2 class="text-lg font-semibold text-gray-800 mb-4">
+            Progreso del Curso
+          </h2>
+          <div class="mb-4">
+            <p class="text-sm text-gray-600">
+              Curso: Introducción a la Programación
+            </p>
+            <div class="relative w-full bg-gray-200 rounded-full h-4 mt-2">
+              <div
+                class="absolute top-0 left-0 h-4 bg-blue-500 rounded-full"
+                style="width: 75%"
+              ></div>
+            </div>
+            <p class="text-right text-sm text-gray-600 mt-2">75% completado</p>
+          </div>
+          <div>
+            <p class="text-sm text-gray-600">Curso: Desarrollo Web Avanzado</p>
+            <div class="relative w-full bg-gray-200 rounded-full h-4 mt-2">
+              <div
+                class="absolute top-0 left-0 h-4 bg-green-500 rounded-full"
+                style="width: 40%"
+              ></div>
+            </div>
+            <p class="text-right text-sm text-gray-600 mt-2">40% completado</p>
+          </div>
+        </section>
 
-        <br><br>
-        <div><a href="inicio.html">Inicio</a></div>
+        <!-- Calendario -->
+        <section class="lg:col-span-1 bg-white p-4 rounded-lg shadow-md">
+          <h2 class="text-lg font-semibold text-gray-800 mb-4">Calendario</h2>
+          <div class="grid grid-cols-7 gap-1 text-center text-gray-700">
+            <!-- Días de la semana -->
+            <div class="font-semibold">Lun</div>
+            <div class="font-semibold">Mar</div>
+            <div class="font-semibold">Mié</div>
+            <div class="font-semibold">Jue</div>
+            <div class="font-semibold">Vie</div>
+            <div class="font-semibold">Sáb</div>
+            <div class="font-semibold">Dom</div>
+
+            <!-- Fechas (Ejemplo) -->
+            <div class="text-gray-400">29</div>
+            <div class="text-gray-400">30</div>
+            <div class="text-gray-400">31</div>
+            <div class="bg-blue-100 rounded-full">1</div>
+            <div class="bg-blue-100 rounded-full">2</div>
+            <div class="bg-blue-500 text-white rounded-full">3</div>
+            <div class="text-gray-400">4</div>
+
+            <!-- Más días -->
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+          </div>
+        </section>
+
+        <!-- Tabla de notas -->
+        <section class="lg:col-span-1 bg-white p-4 rounded-lg shadow-md">
+          <h2 class="text-lg font-semibold text-gray-800 mb-4">
+            Tabla de Notas
+          </h2>
+          <table class="w-full text-sm text-left text-gray-600">
+            <thead class="bg-gray-100 text-gray-700">
+              <tr>
+                <th class="py-2 px-4">Asignatura</th>
+                <th class="py-2 px-4">Calificación</th>
+                <th class="py-2 px-4">Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="py-2 px-4">Matemáticas</td>
+                <td class="py-2 px-4">85/100</td>
+                <td class="py-2 px-4">
+                  <span class="text-green-600 font-semibold">Aprobado</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4">Historia</td>
+                <td class="py-2 px-4">70/100</td>
+                <td class="py-2 px-4">
+                  <span class="text-yellow-600 font-semibold">Regular</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4">Ciencias</td>
+                <td class="py-2 px-4">90/100</td>
+                <td class="py-2 px-4">
+                  <span class="text-green-600 font-semibold">Aprobado</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <a
+          href="/pages/inicio.html"
+          class="bg-blue-500 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 text-center"
+        >
+          Atrás
+        </a>
+      </div>
     </div>
-
-   
-    
-</body>
+  </body>
 </html>
