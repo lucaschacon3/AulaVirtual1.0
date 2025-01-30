@@ -1,128 +1,182 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aula Virtual - Matemáticas</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../styles/index.css">
-</head>
-<body class="bg-gray-100 min-h-screen flex flex-col">
-
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+  <body class="bg-gray-100 min-h-screen flex flex-col">
     <!-- HEADER -->
-    <header class="w-full bg-red-500 text-white p-4 shadow-md flex justify-between items-center">
-        <div class="flex items-center gap-4">
-            <img src="https://cdn-icons-png.flaticon.com/512/6326/6326055.png" 
-                 alt="Foto de perfil" 
-                 class="w-12 h-12 rounded-full border-2 border-white">
-            <a href="./usuario.html">
-                <span class="font-semibold text-lg">Usuario</span>
-            </a>
-        </div>
-        <h1 class="text-3xl font-bold">Mis Asignaturas</h1>
-        <a href="../index.html" class="bg-white text-red-500 font-bold px-4 py-2 rounded-lg hover:bg-red-600 hover:text-white transition">
-            Cerrar sesión
+    <header
+      class="w-full bg-red-500 text-white p-4 shadow-md flex justify-between items-center"
+    >
+      <div class="flex items-center gap-4">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/6326/6326055.png"
+          alt="Foto de perfil"
+          class="w-12 h-12 rounded-full border-2 border-white"
+        />
+        <a href="./usuario.html">
+          <span class="font-semibold text-lg">Usuario</span>
         </a>
+      </div>
+      <h1 class="text-3xl font-bold">Mis Asignaturas</h1>
+      <a
+        href="../index.html"
+        class="bg-white text-red-500 font-bold px-4 py-2 rounded-lg hover:bg-red-600 hover:text-white transition"
+      >
+        Cerrar sesión
+      </a>
     </header>
 
     <!-- CONTENIDO PRINCIPAL -->
     <main class="flex-grow flex flex-col items-center justify-center p-6">
-        <div class="bg-white shadow-xl rounded-xl p-6 w-full max-w-3xl">
-            <h2 class="text-3xl font-bold text-gray-800 text-center mb-6">Matemáticas</h2>
+      <div class="bg-white shadow-xl rounded-xl p-6 w-full max-w-3xl">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-6">
+          Matemáticas
+        </h2>
 
-            <!-- ASIGNATURAS -->
-            <div class="space-y-4">
-                
-                <!-- Álgebra -->
-                <div class="bg-blue-500 text-white p-3 rounded-lg cursor-pointer text-center text-xl font-semibold" 
-                     onclick="toggleSection('algebra')">
-                    Álgebra ⬇
-                </div>
-                <div id="algebra" class="hidden bg-gray-100 p-4 rounded-lg transition-all">
-                    <h3 class="text-2xl font-semibold mb-2">📖 Teoría</h3>
-                    <p>El Álgebra estudia estructuras, relaciones y operaciones.</p>
-                    <ul class="list-disc ml-6 mt-2">
-                        <li>Ecuaciones y desigualdades</li>
-                        <li>Polinomios y factorización</li>
-                    </ul>
+        <!-- ASIGNATURAS -->
+        <div class="space-y-4">
+          <!-- Álgebra -->
+          <div
+            class="bg-blue-500 text-white p-3 rounded-lg cursor-pointer text-center text-xl font-semibold"
+            onclick="toggleSection('algebra')"
+          >
+            Álgebra ⬇
+          </div>
+          <div
+            id="algebra"
+            class="hidden bg-gray-100 p-4 rounded-lg transition-all"
+          >
+            <h3 class="text-2xl font-semibold mb-2">📖 Teoría</h3>
+            <p>El Álgebra estudia estructuras, relaciones y operaciones.</p>
+            <ul class="list-disc ml-6 mt-2">
+              <li>Ecuaciones y desigualdades</li>
+              <li>Polinomios y factorización</li>
+            </ul>
 
-                    <h3 class="text-2xl font-semibold mt-4 mb-2">📝 Tareas</h3>
-                    <ul class="list-disc ml-6">
-                        <li>Resolver ecuaciones de primer grado</li>
-                        <li>Factorizar polinomios</li>
-                    </ul>
+            <h3 class="text-2xl font-semibold mt-4 mb-2">📝 Tareas</h3>
+            <ul class="list-disc ml-6">
+              <li>Resolver ecuaciones de primer grado</li>
+              <li>Factorizar polinomios</li>
+            </ul>
 
-                    <h3 class="text-2xl font-semibold mt-4 mb-2">📌 Entregas</h3>
-                    <ul class="list-disc ml-6">
-                        <li>Ejercicios de ecuaciones - <span class="text-red-500">10/02/2025</span></li>
-                    </ul>
-                </div>
+            <h3 class="text-2xl font-semibold mt-4 mb-2">📌 Entregas</h3>
+            <ul class="list-disc ml-6">
+              <li>
+                Ejercicios de ecuaciones -
+                <span class="text-red-500">10/02/2025</span>
+              </li>
+            </ul>
+          </div>
 
-                <!-- Geometría -->
-                <div class="bg-blue-500 text-white p-3 rounded-lg cursor-pointer text-center text-xl font-semibold" 
-                     onclick="toggleSection('geometria')">
-                    Geometría ⬇
-                </div>
-                <div id="geometria" class="hidden bg-gray-100 p-4 rounded-lg transition-all">
-                    <h3 class="text-2xl font-semibold mb-2">📖 Teoría</h3>
-                    <p>La Geometría estudia formas, tamaños y propiedades del espacio.</p>
-                    <ul class="list-disc ml-6 mt-2">
-                        <li>Figuras geométricas</li>
-                        <li>Teorema de Pitágoras</li>
-                    </ul>
+          <!-- Geometría -->
+          <div
+            class="bg-blue-500 text-white p-3 rounded-lg cursor-pointer text-center text-xl font-semibold"
+            onclick="toggleSection('geometria')"
+          >
+            Geometría ⬇
+          </div>
+          <div
+            id="geometria"
+            class="hidden bg-gray-100 p-4 rounded-lg transition-all"
+          >
+            <h3 class="text-2xl font-semibold mb-2">📖 Teoría</h3>
+            <p>
+              La Geometría estudia formas, tamaños y propiedades del espacio.
+            </p>
+            <ul class="list-disc ml-6 mt-2">
+              <li>Figuras geométricas</li>
+              <li>Teorema de Pitágoras</li>
+            </ul>
 
-                    <h3 class="text-2xl font-semibold mt-4 mb-2">📝 Tareas</h3>
-                    <ul class="list-disc ml-6">
-                        <li>Calcular áreas de figuras</li>
-                        <li>Demostrar el Teorema de Pitágoras</li>
-                    </ul>
+            <h3 class="text-2xl font-semibold mt-4 mb-2">📝 Tareas</h3>
+            <ul class="list-disc ml-6">
+              <li>Calcular áreas de figuras</li>
+              <li>Demostrar el Teorema de Pitágoras</li>
+            </ul>
 
-                    <h3 class="text-2xl font-semibold mt-4 mb-2">📌 Entregas</h3>
-                    <ul class="list-disc ml-6">
-                        <li>Ejercicios de triángulos - <span class="text-red-500">12/02/2025</span></li>
-                    </ul>
-                </div>
+            <h3 class="text-2xl font-semibold mt-4 mb-2">📌 Entregas</h3>
+            <ul class="list-disc ml-6">
+              <li>
+                Ejercicios de triángulos -
+                <span class="text-red-500">12/02/2025</span>
+              </li>
+            </ul>
+          </div>
 
-                <!-- Estadística -->
-                <div class="bg-blue-500 text-white p-3 rounded-lg cursor-pointer text-center text-xl font-semibold" 
-                     onclick="toggleSection('estadistica')">
-                    Estadística ⬇
-                </div>
-                <div id="estadistica" class="hidden bg-gray-100 p-4 rounded-lg transition-all">
-                    <h3 class="text-2xl font-semibold mb-2">📖 Teoría</h3>
-                    <p>La Estadística analiza datos y saca conclusiones.</p>
-                    <ul class="list-disc ml-6 mt-2">
-                        <li>Media, mediana y moda</li>
-                        <li>Distribuciones de datos</li>
-                    </ul>
+          <!-- Estadística -->
+          <div
+            class="bg-blue-500 text-white p-3 rounded-lg cursor-pointer text-center text-xl font-semibold"
+            onclick="toggleSection('estadistica')"
+          >
+            Estadística ⬇
+          </div>
+          <div
+            id="estadistica"
+            class="hidden bg-gray-100 p-4 rounded-lg transition-all"
+          >
+            <h3 class="text-2xl font-semibold mb-2">📖 Teoría</h3>
+            <p>La Estadística analiza datos y saca conclusiones.</p>
+            <ul class="list-disc ml-6 mt-2">
+              <li>Media, mediana y moda</li>
+              <li>Distribuciones de datos</li>
+            </ul>
 
-                    <h3 class="text-2xl font-semibold mt-4 mb-2">📝 Tareas</h3>
-                    <ul class="list-disc ml-6">
-                        <li>Calcular medidas de tendencia central</li>
-                        <li>Analizar distribuciones de datos</li>
-                    </ul>
+            <h3 class="text-2xl font-semibold mt-4 mb-2">📝 Tareas</h3>
+            <ul class="list-disc ml-6">
+              <li>Calcular medidas de tendencia central</li>
+              <li>Analizar distribuciones de datos</li>
+            </ul>
 
-                    <h3 class="text-2xl font-semibold mt-4 mb-2">📌 Entregas</h3>
-                    <ul class="list-disc ml-6">
-                        <li>Análisis de datos - <span class="text-red-500">15/02/2025</span></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- BOTÓN DE INICIO -->
-            <a href="inicio.html" 
-               class="block bg-red-500 text-white p-3 rounded-lg text-center mt-6 text-lg font-semibold hover:bg-red-600">
-                Volver a Inicio
-            </a>
+            <h3 class="text-2xl font-semibold mt-4 mb-2">📌 Entregas</h3>
+            <ul class="list-disc ml-6">
+              <li>
+                Análisis de datos - <span class="text-red-500">15/02/2025</span>
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <!-- BOTÓN DE INICIO -->
+        <a
+          href="inicio.html"
+          class="block bg-red-500 text-white p-3 rounded-lg text-center mt-6 text-lg font-semibold hover:bg-red-600"
+        >
+          Volver a Inicio
+        </a>
+        <!-- Footer de Usuario -->
+
+      </div>
+
     </main>
+    <footer class="bg-gray-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <!-- Información de Usuario -->
+          <div>
+            <p class="text-sm">
+              Usuario: <span class="font-bold">Estudiante123</span>
+            </p>
+            <p class="text-sm">Correo: estudiante@example.com</p>
+          </div>
+          <!-- Derechos -->
+          <div>
+            <p class="text-sm">
+              &copy; 2025 Aula Virtual. Todos los derechos reservados.
+            </p>
+          </div>
+        </div>
+        <a href=""></a>
+      </footer>
 
     <script>
-        function toggleSection(id) {
-            let section = document.getElementById(id);
-            section.classList.toggle("hidden");
-        }
+      function toggleSection(id) {
+        let section = document.getElementById(id);
+        section.classList.toggle("hidden");
+      }
     </script>
-
-</body>
+  </body>
 </html>
