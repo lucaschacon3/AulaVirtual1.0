@@ -1,60 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis Asignaturas</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="../styles/index.css">
-</head>
-<body class="bg-gray-100 min-h-screen flex flex-col">
-
-  <!-- Header -->
-  <header class="w-full bg-blue-500 text-white p-4 shadow-md">
-    <h1 class="text-2xl font-bold text-center">Mis Asignaturas</h1>
-  </header>
-
-  <!-- Contenido -->
-  <main class="container mx-auto p-6 flex-grow">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Tarjeta Álgebra -->
-      <div class="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center">
-        <h2 class="text-xl font-semibold text-gray-800 mb-2">Álgebra</h2>
-        <p class="text-gray-600 mb-4">Explora los fundamentos del álgebra: ecuaciones, desigualdades y más.</p>
-        <a href="#" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">Ver Curso</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis Asignaturas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+  <body class="bg-gray-100 min-h-screen flex flex-col">
+    <!-- Header -->
+    <header
+      class="w-full bg-red-500 text-white p-4 shadow-md flex justify-between items-center"
+    >
+      <div class="flex items-center gap-4">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/6326/6326055.png"
+          alt="Foto de perfil"
+          class="w-10 h-10 rounded-full border-2 border-white"
+        />
+        <a href="./usuario.html">
+          <span class="font-semibold">Usuario</span>
+        </a>
       </div>
+      <h1 class="text-2xl font-bold mx-auto">Mis Asignaturas</h1>
+      <a
+        class="bg-white text-red-500 font-bold px-4 py-2 rounded-lg hover:bg-red-600 hover:text-white transition"
+        href="../index.html"
+      >
+        Cerrar sesión
+      </a>
+    </header>
 
-      <!-- Tarjeta Estadística -->
-      <div class="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center">
-        <h2 class="text-xl font-semibold text-gray-800 mb-2">Estadística</h2>
-        <p class="text-gray-600 mb-4">Aprende a analizar datos y comprender probabilidades.</p>
-        <a href="#" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">Ver Curso</a>
-      </div>
+    <!-- Contenido -->
+    <main class="container mx-auto p-6 flex-grow">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Tarjeta Álgebra -->
+        <div
+          class="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center"
+        >
+          <h2 class="text-xl font-semibold text-gray-800 mb-2">Álgebra</h2>
+          <p class="text-gray-600 mb-4">
+            Explora los fundamentos del álgebra: ecuaciones, desigualdades y
+            más.
+          </p>
+          <a
+            href="./asignatura.html"
+            class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600"
+            >Ver Curso</a
+          >
+        </div>
 
-      <!-- Tarjeta Geometría -->
-      <div class="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center">
-        <h2 class="text-xl font-semibold text-gray-800 mb-2">Geometría</h2>
-        <p class="text-gray-600 mb-4">Descubre las formas, ángulos y principios geométricos.</p>
-        <a href="#" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">Ver Curso</a>
-      </div>
-    </div>
-  </main>
+        <!-- Tarjeta Estadística -->
+        <div
+          class="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center"
+        >
+          <h2 class="text-xl font-semibold text-gray-800 mb-2">Estadística</h2>
+          <p class="text-gray-600 mb-4">
+            Aprende a analizar datos y comprender probabilidades.
+          </p>
+          <a
+            href="./asignatura.html"
+            class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600"
+            >Ver Curso</a
+          >
+        </div>
 
-  <!-- Footer de Usuario -->
-  <footer class="bg-gray-800 text-white p-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <!-- Información de Usuario -->
-      <div>
-        <p class="text-sm">Usuario: <span class="font-bold">Estudiante123</span></p>
-        <p class="text-sm">Correo: estudiante@example.com</p>
+        <!-- Tarjeta Geometría -->
+        <div
+          class="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center"
+        >
+          <h2 class="text-xl font-semibold text-gray-800 mb-2">Geometría</h2>
+          <p class="text-gray-600 mb-4">
+            Descubre las formas, ángulos y principios geométricos.
+          </p>
+          <a
+            href="./asignatura.html"
+            class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600"
+            >Ver Curso</a
+          >
+        </div>
       </div>
-      <!-- Derechos -->
-      <div>
-        <p class="text-sm">&copy; 2025 Aula Virtual. Todos los derechos reservados.</p>
-      </div>
-    </div>
-    <a href=""></a>
-  </footer>
+    </main>
 
-</body>
+    <!-- Footer de Usuario -->
+    <footer class="bg-gray-800 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Información de Usuario -->
+        <div>
+          <p class="text-sm">
+            Usuario: <span class="font-bold">Estudiante123</span>
+          </p>
+          <p class="text-sm">Correo: estudiante@example.com</p>
+        </div>
+        <!-- Derechos -->
+        <div>
+          <p class="text-sm">
+            &copy; 2025 Aula Virtual. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+      <a href=""></a>
+    </footer>
+  </body>
 </html>
