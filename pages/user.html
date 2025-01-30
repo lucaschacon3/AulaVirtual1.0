@@ -1,34 +1,34 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aula Virtual</title>
+    <title>Virtual Classroom</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../styles/index.css" />
   </head>
   <body class="bg-gray-100 min-h-screen">
-    <!-- Contenedor principal -->
+    <!-- Main Container -->
     <div class="container mx-auto p-6">
       <header
         class="flex items-center justify-between bg-white p-4 rounded-lg shadow-md mb-6"
       >
         <div id="logo"></div>
         <p class="text-gray-600">
-          Bienvenido, <span class="font-semibold">Usuario</span>
+          Welcome, <span class="font-semibold">User</span>
         </p>
       </header>
 
-      <!-- Contenido principal -->
+      <!-- Main Content -->
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <!-- Barra de progreso del curso -->
+        <!-- Course Progress Bar -->
         <section class="lg:col-span-1 bg-white p-4 rounded-lg shadow-md">
           <h2 class="text-lg font-semibold text-gray-800 mb-4">
-            Progreso del Curso
+            Course Progress
           </h2>
           <div class="mb-4">
             <p class="text-sm text-gray-600">
-              Curso: Introducción a la Programación
+              Course: Algebra
             </p>
             <div class="relative w-full bg-gray-200 rounded-full h-4 mt-2">
               <div
@@ -36,34 +36,44 @@
                 style="width: 75%"
               ></div>
             </div>
-            <p class="text-right text-sm text-gray-600 mt-2">75% completado</p>
+            <p class="text-right text-sm text-gray-600 mt-2">75% completed</p>
           </div>
           <div>
-            <p class="text-sm text-gray-600">Curso: Desarrollo Web Avanzado</p>
+            <p class="text-sm text-gray-600">Course: Geometry</p>
             <div class="relative w-full bg-gray-200 rounded-full h-4 mt-2">
               <div
                 class="absolute top-0 left-0 h-4 bg-green-500 rounded-full"
                 style="width: 40%"
               ></div>
             </div>
-            <p class="text-right text-sm text-gray-600 mt-2">40% completado</p>
+            <p class="text-right text-sm text-gray-600 mt-2">40% completed</p>
+          </div>
+          <div>
+            <p class="text-sm text-gray-600">Course: Statistics</p>
+            <div class="relative w-full bg-gray-200 rounded-full h-4 mt-2">
+              <div
+                class="absolute top-0 left-0 h-4 bg-yellow-500 rounded-full"
+                style="width: 60%"
+              ></div>
+            </div>
+            <p class="text-right text-sm text-gray-600 mt-2">60% completed</p>
           </div>
         </section>
 
-        <!-- Calendario -->
+        <!-- Calendar -->
         <section class="lg:col-span-1 bg-white p-4 rounded-lg shadow-md">
-          <h2 class="text-lg font-semibold text-gray-800 mb-4">Calendario</h2>
+          <h2 class="text-lg font-semibold text-gray-800 mb-4">Calendar</h2>
           <div class="grid grid-cols-7 gap-1 text-center text-gray-700">
-            <!-- Días de la semana -->
-            <div class="font-semibold">Lun</div>
-            <div class="font-semibold">Mar</div>
-            <div class="font-semibold">Mié</div>
-            <div class="font-semibold">Jue</div>
-            <div class="font-semibold">Vie</div>
-            <div class="font-semibold">Sáb</div>
-            <div class="font-semibold">Dom</div>
+            <!-- Weekdays -->
+            <div class="font-semibold">Mon</div>
+            <div class="font-semibold">Tue</div>
+            <div class="font-semibold">Wed</div>
+            <div class="font-semibold">Thu</div>
+            <div class="font-semibold">Fri</div>
+            <div class="font-semibold">Sat</div>
+            <div class="font-semibold">Sun</div>
 
-            <!-- Fechas (Ejemplo) -->
+            <!-- Dates (Example) -->
             <div class="text-gray-400">29</div>
             <div class="text-gray-400">30</div>
             <div class="text-gray-400">31</div>
@@ -72,7 +82,7 @@
             <div class="bg-blue-500 text-white rounded-full">3</div>
             <div class="text-gray-400">4</div>
 
-            <!-- Más días -->
+            <!-- More Days -->
             <div>5</div>
             <div>6</div>
             <div>7</div>
@@ -83,39 +93,39 @@
           </div>
         </section>
 
-        <!-- Tabla de notas -->
+        <!-- Grade Table -->
         <section class="lg:col-span-1 bg-white p-4 rounded-lg shadow-md">
           <h2 class="text-lg font-semibold text-gray-800 mb-4">
-            Tabla de Notas
+            Grade Table
           </h2>
           <table class="w-full text-sm text-left text-gray-600">
             <thead class="bg-gray-100 text-gray-700">
               <tr>
-                <th class="py-2 px-4">Asignatura</th>
-                <th class="py-2 px-4">Calificación</th>
-                <th class="py-2 px-4">Estado</th>
+                <th class="py-2 px-4">Subject</th>
+                <th class="py-2 px-4">Grade</th>
+                <th class="py-2 px-4">Status</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="py-2 px-4">Matemáticas</td>
-                <td class="py-2 px-4">85/100</td>
+                <td class="py-2 px-4">Algebra</td>
+                <td class="py-2 px-4">8.5/10</td>
                 <td class="py-2 px-4">
-                  <span class="text-green-600 font-semibold">Aprobado</span>
+                  <span class="text-green-600 font-semibold">Passed</span>
                 </td>
               </tr>
               <tr>
-                <td class="py-2 px-4">Historia</td>
-                <td class="py-2 px-4">70/100</td>
+                <td class="py-2 px-4">Geometry</td>
+                <td class="py-2 px-4">7/10</td>
                 <td class="py-2 px-4">
-                  <span class="text-yellow-600 font-semibold">Regular</span>
+                  <span class="text-yellow-600 font-semibold">Average</span>
                 </td>
               </tr>
               <tr>
-                <td class="py-2 px-4">Ciencias</td>
-                <td class="py-2 px-4">90/100</td>
+                <td class="py-2 px-4">Statistics</td>
+                <td class="py-2 px-4">9/10</td>
                 <td class="py-2 px-4">
-                  <span class="text-green-600 font-semibold">Aprobado</span>
+                  <span class="text-green-600 font-semibold">Passed</span>
                 </td>
               </tr>
             </tbody>
@@ -125,10 +135,10 @@
       </div>
       <br>
       <a
-      href="/pages/inicio.html"
+      href="/pages/home.html"
       class="bg-blue-500 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 text-center"
     >
-      Atrás
+      Back
     </a>
     
     </div>

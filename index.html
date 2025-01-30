@@ -1,58 +1,58 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página de Login</title>
+  <title>Login Page</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
 
   <div class="w-full max-w-md p-6 bg-white rounded-2xl shadow-lg">
-    <h1 class="text-2xl font-bold text-center mb-6 text-gray-800">Iniciar Sesión</h1>
+    <h1 class="text-2xl font-bold text-center mb-6 text-gray-800">Sign In</h1>
     
-    <!-- Formulario -->
-    <form class="space-y-4" action="/pages/inicio.html">
-      <!-- Campo de Usuario -->
+    <!-- Form -->
+    <form class="space-y-4" action="/pages/home.html">
+      <!-- Username Field -->
       <div>
-        <label for="username" class="block text-sm font-medium text-gray-700">Usuario</label>
-        <input type="text" id="username" placeholder="Ingresa tu usuario" class="w-full mt-1 px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+        <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+        <input type="text" id="username" placeholder="Enter your username" class="w-full mt-1 px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
       </div>
       
-      <!-- Campo de Contraseña -->
+      <!-- Password Field -->
       <div>
-        <label for="password" class="block text-sm font-medium text-gray-700">Contraseña</label>
-        <input type="password" id="password" placeholder="Ingresa tu contraseña" class="w-full mt-1 px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" class="w-full mt-1 px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
       </div>
       
-      <!-- Enlace Olvidaste Contraseña -->
+      <!-- Forgot Password Link -->
       <div class="text-right">
-        <a href="#" class="text-sm text-black-500 hover:underline">¿Olvidaste tu contraseña?</a>
+        <a href="#" class="text-sm text-black-500 hover:underline">Forgot your password?</a>
       </div>
       
-      <!-- Botón de Login -->
+      <!-- Login Button -->
       <button type="submit" class="w-full bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-        Iniciar Sesión
+        Sign In
       </button>
     </form>
 
-    <!-- Separador -->
+    <!-- Separator -->
     <div class="flex items-center my-6">
       <div class="border-t border-gray-300 flex-grow"></div>
-      <span class="px-3 text-gray-500 text-sm">o continúa con</span>
+      <span class="px-3 text-gray-500 text-sm">or continue with</span>
       <div class="border-t border-gray-300 flex-grow"></div>
     </div>
 
-    <!-- Botones de Google y Facebook -->
+    <!-- Google and Facebook Buttons -->
     <div class="space-y-4">
       <button class="w-full flex items-center justify-center bg-white border border-gray-300 text-gray-700 py-2 px-4 rounded-lg shadow-sm hover:bg-gray-50">
         <img src="https://www.svgrepo.com/show/355037/google.svg" alt="Google" class="w-5 h-5 mr-2">
-        Inicia sesión con Google
+        Sign in with Google
       </button>
       <button class="w-full flex items-center justify-center bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">
         <img src="https://www.svgrepo.com/show/431792/meta.svg" alt="Facebook" class="w-5 h-5 mr-2">
-        Inicia sesión con Facebook
+        Sign in with Facebook
       </button>
     </div>
   </div>
