@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Classroom - Mathematics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+  <body class="bg-gray-100 min-h-screen flex flex-col">
+    <!-- HEADER -->
+    <header
+      class="w-full bg-red-500 text-white p-4 shadow-md flex justify-between items-center"
+    >
+      <div class="flex items-center gap-4">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/6326/6326055.png"
+          alt="Profile picture"
+          class="w-12 h-12 rounded-full border-2 border-white"
+        />
+        <a href="./user.html">
+          <span class="font-semibold text-lg">User</span>
+        </a>
+      </div>
+      <h1 class="text-3xl font-bold">My Subjects</h1>
+      <a
+        href="../index.html"
+        class="bg-white text-red-500 font-bold px-4 py-2 rounded-lg hover:bg-red-600 hover:text-white transition"
+      >
+        Logout
+      </a>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow flex flex-col items-center justify-center p-6">
+      <div class="bg-white shadow-xl rounded-xl p-6 w-full max-w-3xl">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-6">
+          Mathematics
+        </h2>
+
+        <!-- SUBJECTS -->
+        <div class="space-y-4">
+          <!-- Algebra -->
+          <div
+            class="bg-blue-500 text-white p-3 rounded-lg cursor-pointer text-center text-xl font-semibold"
+            onclick="toggleSection('algebra')"
+          >
+            Algebra ⬇
+          </div>
+          <div
+            id="algebra"
+            class="hidden bg-gray-100 p-4 rounded-lg transition-all"
+          >
+            <h3 class="text-2xl font-semibold mb-2">📖 Theory</h3>
+            <p>Algebra studies structures, relations, and operations.</p>
+            <ul class="list-disc ml-6 mt-2">
+              <li>Equations and inequalities</li>
+              <li>Polynomials and factoring</li>
+            </ul>
+
+            <h3 class="text-2xl font-semibold mt-4 mb-2">📝 Assignments</h3>
+            <ul class="list-disc ml-6">
+              <li>Solve first-degree equations</li>
+              <li>Factor polynomials</li>
+            </ul>
+
+            <h3 class="text-2xl font-semibold mt-4 mb-2">📌 Deadlines</h3>
+            <ul class="list-disc ml-6">
+              <li>
+                Equation exercises -
+                <span class="text-red-500">02/10/2025</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Geometry -->
+          <div
+            class="bg-blue-500 text-white p-3 rounded-lg cursor-pointer text-center text-xl font-semibold"
+            onclick="toggleSection('geometry')"
+          >
+            Geometry ⬇
+          </div>
+          <div
+            id="geometry"
+            class="hidden bg-gray-100 p-4 rounded-lg transition-all"
+          >
+            <h3 class="text-2xl font-semibold mb-2">📖 Theory</h3>
+            <p>
+              Geometry studies shapes, sizes, and properties of space.
+            </p>
+            <ul class="list-disc ml-6 mt-2">
+              <li>Geometric shapes</li>
+              <li>Pythagorean theorem</li>
+            </ul>
+
+            <h3 class="text-2xl font-semibold mt-4 mb-2">📝 Assignments</h3>
+            <ul class="list-disc ml-6">
+              <li>Calculate areas of shapes</li>
+              <li>Prove the Pythagorean theorem</li>
+            </ul>
+
+            <h3 class="text-2xl font-semibold mt-4 mb-2">📌 Deadlines</h3>
+            <ul class="list-disc ml-6">
+              <li>
+                Triangle exercises -
+                <span class="text-red-500">02/12/2025</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Statistics -->
+          <div
+            class="bg-blue-500 text-white p-3 rounded-lg cursor-pointer text-center text-xl font-semibold"
+            onclick="toggleSection('statistics')"
+          >
+            Statistics ⬇
+          </div>
+          <div
+            id="statistics"
+            class="hidden bg-gray-100 p-4 rounded-lg transition-all"
+          >
+            <h3 class="text-2xl font-semibold mb-2">📖 Theory</h3>
+            <p>Statistics analyzes data and draws conclusions.</p>
+            <ul class="list-disc ml-6 mt-2">
+              <li>Mean, median, and mode</li>
+              <li>Data distributions</li>
+            </ul>
+
+            <h3 class="text-2xl font-semibold mt-4 mb-2">📝 Assignments</h3>
+            <ul class="list-disc ml-6">
+              <li>Calculate measures of central tendency</li>
+              <li>Analyze data distributions</li>
+            </ul>
+
+            <h3 class="text-2xl font-semibold mt-4 mb-2">📌 Deadlines</h3>
+            <ul class="list-disc ml-6">
+              <li>
+                Data analysis - <span class="text-red-500">02/15/2025</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- HOME BUTTON -->
+        <a
+          href="home.html"
+          class="block bg-red-500 text-white p-3 rounded-lg text-center mt-6 text-lg font-semibold hover:bg-red-600"
+        >
+          Go Back to Home
+        </a>
+
+      </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <!-- User Info -->
+          <div>
+            <p class="text-sm">
+              User: <span class="font-bold">Student123</span>
+            </p>
+            <p class="text-sm">Email: student@example.com</p>
+          </div>
+          <!-- Rights -->
+          <div>
+            <p class="text-sm">
+              &copy; 2025 Virtual Classroom. All rights reserved.
+            </p>
+          </div>
+        </div>
+    </footer>
+
+    <script>
+      function toggleSection(id) {
+        let section = document.getElementById(id);
+        section.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
