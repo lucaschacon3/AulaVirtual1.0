@@ -70,6 +70,9 @@ body > div {
 }
 
 @media only screen and (max-width: 640px) {
+  #close-sesion {
+    text-align: center;
+  }
   #footer {
     display: flex;
     flex-direction: column;
