@@ -1,18 +1,79 @@
 body {
   background-image: url("../img/background.png");
   margin: 0;
-  padding: 50px;
+  padding: 25px;
 }
 body > div {
-  border: 1px solid hsl(0, 0%, 0%);
+  border: 1px solid black;
   border-radius: 15px;
 }
 
 #container {
   background-color: rgba(217, 217, 217, 0.83);
-  padding: 50px;
+  padding: 25px;
+}
+#container > hr {
+  margin: 15px 0;
 }
 
 #header {
-  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#header #aulavirtual-icon {
+  height: 78px;
+  width: 222px;
+}
+#header #user-profile-icon {
+  height: 71px;
+  width: 71px;
+}
+#header #close-sesion {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #b20a0a;
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+#header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#footer .footer-left {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#footer .footer-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+#footer .footer-right a {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 640px) {
+  #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }/*# sourceMappingURL=index.css.map */
