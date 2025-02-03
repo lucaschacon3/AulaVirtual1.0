@@ -1,143 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Classroom - Mathematics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Virtual Classroom - Mathematics</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="../styles/index.css" />
-</head>
-
-<body class="bg-gray-100 min-h-screen flex flex-col">
-  <!-- HEADER -->
-  <div id="container">
-    <div id="header">
-      <a href="/pages/home.html"><img id="aulavirtual-icon" src="/icons/aulavirtual_icon.svg"
-          alt="aulavirtual icon"></a>
-      <div>
-        <a href="./user.html"><img id="user-profile-icon" src="/img/user_profile_icon.png"
-            alt="user profile icon"></a>
-        <a id="close-sesion" href="/index.html">Cerrar sesión</a>
-      </div>
-    </div>
-    <hr>
-
-    <!-- MAIN CONTENT -->
-    <main class="flex-grow flex flex-col items-center justify-center p-6">
-      <div class="bg-white shadow-xl rounded-xl p-6 w-full max-w-3xl">
-        <h2 class="text-3xl font-bold text-gray-800 text-center mb-6">
-          Mathematics
-        </h2>
-
-        <!-- SUBJECTS -->
-        <div class="space-y-4">
-          <!-- Algebra -->
-          <div class="bg-blue-500 text-white p-3 rounded-lg cursor-pointer text-center text-xl font-semibold">
-            <a href="/pages/elemental_algebra.html">Álgebra elemental</a> <span
-              onclick="toggleSection('algebra')">⬇</span>
-          </div>
-          <div id="algebra" class="hidden bg-gray-100 p-4 rounded-lg transition-all">
-            <h3 class="text-2xl font-semibold mb-2">📖 Theory</h3>
-            <p>Algebra studies structures, relations, and operations.</p>
-            <ul class="list-disc ml-6 mt-2">
-              <li>Equations and inequalities</li>
-              <li>Polynomials and factoring</li>
-            </ul>
-
-            <h3 class="text-2xl font-semibold mt-4 mb-2">📝 Assignments</h3>
-            <ul class="list-disc ml-6">
-              <li>Solve first-degree equations</li>
-              <li>Factor polynomials</li>
-            </ul>
-
-            <h3 class="text-2xl font-semibold mt-4 mb-2">📌 Deadlines</h3>
-            <ul class="list-disc ml-6">
-              <li>
-                Equation exercises -
-                <span class="text-red-500">02/10/2025</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Geometry -->
-          <div class="bg-blue-500 text-white p-3 rounded-lg cursor-pointer text-center text-xl font-semibold">
-            <a href="/pages/lineal_algebra.html">Álgebra lineal</a> <span onclick="toggleSection('algebra')">⬇</span>
-          </div>
-          <div id="geometry" class="hidden bg-gray-100 p-4 rounded-lg transition-all">
-            <h3 class="text-2xl font-semibold mb-2">📖 Theory</h3>
-            <p>
-              Geometry studies shapes, sizes, and properties of space.
-            </p>
-            <ul class="list-disc ml-6 mt-2">
-              <li>Geometric shapes</li>
-              <li>Pythagorean theorem</li>
-            </ul>
-
-            <h3 class="text-2xl font-semibold mt-4 mb-2">📝 Assignments</h3>
-            <ul class="list-disc ml-6">
-              <li>Calculate areas of shapes</li>
-              <li>Prove the Pythagorean theorem</li>
-            </ul>
-
-            <h3 class="text-2xl font-semibold mt-4 mb-2">📌 Deadlines</h3>
-            <ul class="list-disc ml-6">
-              <li>
-                Triangle exercises -
-                <span class="text-red-500">02/12/2025</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Statistics -->
-          <div class="bg-blue-500 text-white p-3 rounded-lg cursor-pointer text-center text-xl font-semibold">
-            <a href="/pages/abstract_algebra.html">Álgebra abstracta</a> <span
-              onclick="toggleSection('algebra')">⬇</span>
-          </div>
-          <div id="statistics" class="hidden bg-gray-100 p-4 rounded-lg transition-all">
-            <h3 class="text-2xl font-semibold mb-2">📖 Theory</h3>
-            <p>Statistics analyzes data and draws conclusions.</p>
-            <ul class="list-disc ml-6 mt-2">
-              <li>Mean, median, and mode</li>
-              <li>Data distributions</li>
-            </ul>
-
-            <h3 class="text-2xl font-semibold mt-4 mb-2">📝 Assignments</h3>
-            <ul class="list-disc ml-6">
-              <li>Calculate measures of central tendency</li>
-              <li>Analyze data distributions</li>
-            </ul>
-
-            <h3 class="text-2xl font-semibold mt-4 mb-2">📌 Deadlines</h3>
-            <ul class="list-disc ml-6">
-              <li>
-                Data analysis - <span class="text-red-500">02/15/2025</span>
-              </li>
-            </ul>
-          </div>
+  <body class="bg-gray-100 min-h-screen flex flex-col">
+    <!-- HEADER -->
+    <div id="container">
+      <div id="header">
+        <a href="/pages/home.html"
+          ><img
+            id="aulavirtual-icon"
+            src="/icons/aulavirtual_icon.svg"
+            alt="aulavirtual icon"
+        /></a>
+        <div class="flex items-center space-x-4">
+          <a href="./user.html">
+            <img
+              id="user-profile-icon"
+              src="/img/user_profile_icon.png"
+              alt="user profile icon"
+            />
+          </a>
+          <a
+            id="close-sesion"
+            href="/index.html"
+            class="bg-[#30E3CA] hover:bg-[#209983] text-black font-semibold py-2 px-4 rounded-lg transition duration-300"
+          >
+            Cerrar sesión
+          </a>
         </div>
-
-        <!-- HOME BUTTON -->
-        <a href="home.html"
-          class="block bg-red-500 text-white p-3 rounded-lg text-center mt-6 text-lg font-semibold hover:bg-red-600">
-          Go Back to Home
-        </a>
-
       </div>
-    </main>
+      <hr />
 
-    <!--
+      <!-- MAIN CONTENT -->
+      <main class="flex-grow flex flex-col items-center justify-center p-6">
+        <div class="bg-black shadow-xl rounded-xl p-6 w-full max-w-3xl">
+          <h2 class="text-3xl font-bold text-white text-center mb-6">
+            Mathematics
+          </h2>
+
+          <!-- SUBJECTS -->
+          <div class="space-y-4">
+            <!-- Algebra -->
+            <div
+              class="bg-[#FF007F] text-white p-3 rounded-lg cursor-pointer text-center text-xl font-semibold"
+            >
+              <a href="/pages/elemental_algebra.html">Álgebra elemental</a>
+              <span onclick="toggleSection('algebra')">⬇</span>
+            </div>
+            <div
+              id="algebra"
+              class="hidden bg-gray-100 p-4 rounded-lg transition-all"
+            >
+              <h3 class="text-2xl font-semibold mb-2">📖 Theory</h3>
+              <p>Algebra studies structures, relations, and operations.</p>
+              <ul class="list-disc ml-6 mt-2">
+                <li>Equations and inequalities</li>
+                <li>Polynomials and factoring</li>
+              </ul>
+
+              <h3 class="text-2xl font-semibold mt-4 mb-2">📝 Assignments</h3>
+              <ul class="list-disc ml-6">
+                <li>Solve first-degree equations</li>
+                <li>Factor polynomials</li>
+              </ul>
+
+              <h3 class="text-2xl font-semibold mt-4 mb-2">📌 Deadlines</h3>
+              <ul class="list-disc ml-6">
+                <li>
+                  Equation exercises -
+                  <span class="text-red-500">02/10/2025</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Geometry -->
+            <div
+              class="bg-[#FF007F] text-white p-3 rounded-lg cursor-pointer text-center text-xl font-semibold"
+            >
+              <a href="/pages/lineal_algebra.html">Álgebra lineal</a>
+              <span onclick="toggleSection('algebra')">⬇</span>
+            </div>
+            <div
+              id="geometry"
+              class="hidden bg-gray-100 p-4 rounded-lg transition-all"
+            >
+              <h3 class="text-2xl font-semibold mb-2">📖 Theory</h3>
+              <p>Geometry studies shapes, sizes, and properties of space.</p>
+              <ul class="list-disc ml-6 mt-2">
+                <li>Geometric shapes</li>
+                <li>Pythagorean theorem</li>
+              </ul>
+
+              <h3 class="text-2xl font-semibold mt-4 mb-2">📝 Assignments</h3>
+              <ul class="list-disc ml-6">
+                <li>Calculate areas of shapes</li>
+                <li>Prove the Pythagorean theorem</li>
+              </ul>
+
+              <h3 class="text-2xl font-semibold mt-4 mb-2">📌 Deadlines</h3>
+              <ul class="list-disc ml-6">
+                <li>
+                  Triangle exercises -
+                  <span class="text-red-500">02/12/2025</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Statistics -->
+            <div
+              class="bg-[#FF007F] text-white p-3 rounded-lg cursor-pointer text-center text-xl font-semibold"
+            >
+              <a href="/pages/abstract_algebra.html">Álgebra abstracta</a>
+              <span onclick="toggleSection('algebra')">⬇</span>
+            </div>
+            <div
+              id="statistics"
+              class="hidden bg-gray-100 p-4 rounded-lg transition-all"
+            >
+              <h3 class="text-2xl font-semibold mb-2">📖 Theory</h3>
+              <p>Statistics analyzes data and draws conclusions.</p>
+              <ul class="list-disc ml-6 mt-2">
+                <li>Mean, median, and mode</li>
+                <li>Data distributions</li>
+              </ul>
+
+              <h3 class="text-2xl font-semibold mt-4 mb-2">📝 Assignments</h3>
+              <ul class="list-disc ml-6">
+                <li>Calculate measures of central tendency</li>
+                <li>Analyze data distributions</li>
+              </ul>
+
+              <h3 class="text-2xl font-semibold mt-4 mb-2">📌 Deadlines</h3>
+              <ul class="list-disc ml-6">
+                <li>
+                  Data analysis - <span class="text-red-500">02/15/2025</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- HOME BUTTON -->
+          <a
+            href="home.html"
+            class="block bg-[#30E3CA] text-white p-3 rounded-lg text-center mt-6 text-lg font-semibold hover:bg-[#209983]"
+          >
+            Go Back to Home
+          </a>
+        </div>
+      </main>
+
+      <!--
   <footer class="bg-gray-800 text-white p-4">
     <div class="container mx-auto flex justify-between items-center">-->
-    <!-- User Info -->
-    <!--<div>
+      <!-- User Info -->
+      <!--<div>
       <p class="text-sm">
         User: <span class="font-bold">Student123</span>
       </p>
       <p class="text-sm">Email: student@example.com</p>
     </div>-->
-    <!-- Rights -->
-    <!--
+      <!-- Rights -->
+      <!--
     <div>
       <p class="text-sm">
         &copy; 2025 Virtual Classroom. All rights reserved.
@@ -146,13 +175,16 @@
   </div>
   </footer>
   -->
-    <hr>
-    <div id="footer">
-      <div class="footer-left">
-        <p>© 2004-2025 aulavirtual.es - Servicios de Aula Web Premium, Cloud.</p>
-      </div>
-      <div class="footer-right">
-        <a href="help.html">Ayuda</a>
+      <hr />
+      <div id="footer">
+        <div class="footer-left">
+          <p>
+            © 2004-2025 aulavirtual.es - Servicios de Aula Web Premium, Cloud.
+          </p>
+        </div>
+        <div class="footer-right">
+          <a href="help.html">Ayuda</a>
+        </div>
       </div>
     </div>
 
@@ -162,6 +194,5 @@
         section.classList.toggle("hidden");
       }
     </script>
-</body>
-
+  </body>
 </html>
