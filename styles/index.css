@@ -1,15 +1,20 @@
 body {
-  background-image: url("../img/background.png");
+  background-image: url("../img/fondo2.png");
   margin: 0;
   padding: 25px;
 }
+body h1 {
+  color: #F8E71C;
+}
+body h2 {
+  color: #A35AFF;
+}
 body > div {
-  border: 1px solid black;
   border-radius: 15px;
 }
 
 #container {
-  background-color: rgba(217, 217, 217, 0.83);
+  background-color: rgba(0, 0, 0, 0.65);
   padding: 25px;
 }
 #container > hr {
@@ -33,8 +38,7 @@ body > div {
 #header #close-sesion {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #b20a0a;
-  color: white;
+  color: background;
   text-decoration: none;
   border-radius: 15px;
   cursor: pointer;
