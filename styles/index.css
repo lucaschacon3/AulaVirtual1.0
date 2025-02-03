@@ -1,19 +1,86 @@
-body{
-    
-    background-image: url(../img/fondo1.png);
-    font-family: system-ui;
+body {
+  background-image: url("../img/fondo2.png");
+  margin: 0;
+  padding: 25px;
+}
+body h1 {
+  color: #F8E71C;
+}
+body h2 {
+  color: #A35AFF;
+}
+body > div {
+  border-radius: 15px;
 }
 
-#logo{
-    background-image: url(../img/logo.png);
-    width: 120px;         /* Ancho de la caja */
-    height: 50px;        /* Alto de la caja */
-
-    background-repeat: no-repeat;  /* No repetir la imagen */
-    background-size: cover;       /* La imagen cubre toda el área de la caja */
-    background-position: center;  /* Centra la imagen en la caja */
-  
+#container {
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 25px;
+}
+#container > hr {
+  margin: 15px 0;
 }
 
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#header #aulavirtual-icon {
+  height: 78px;
+  width: 222px;
+}
+#header #user-profile-icon {
+  height: 71px;
+  width: 71px;
+}
+#header #close-sesion {
+  display: inline-block;
+  padding: 10px 20px;
+  color: background;
+  text-decoration: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+#header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#footer .footer-left {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#footer .footer-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+#footer .footer-right a {
+  text-decoration: underline;
+}
 
+@media only screen and (max-width: 640px) {
+  #close-sesion {
+    text-align: center;
+  }
+  #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}/*# sourceMappingURL=index.css.map */

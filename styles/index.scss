@@ -1,0 +1,107 @@
+// Styles common to every page, except login
+$colors: (
+  "background": rgba(0,0,0,0.65),
+  "background2":#000,
+
+  "button-primary": #FF007F,
+  "button-secondary": #30E3CA,
+
+  "text": #fff,
+
+  "button-primary-hover": #99004D,
+  "text-hover": #E6CCD6);
+
+$padding: 25px;
+
+@mixin border-radius {
+  border-radius: 15px;
+}
+
+@mixin customized-flex($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+body {
+  background-image: url("../img/fondo2.png");
+  margin: 0;
+  padding: $padding;
+  h1{
+    color: #F8E71C 
+    
+  }
+  h2{
+    color:#A35AFF
+  }
+
+  > div {
+
+    @include border-radius;
+  }
+}
+
+#container {
+  background-color: map-get($map: $colors, $key: "background");
+  padding: $padding;
+
+  > hr {
+    margin: 15px 0;
+  }
+}
+
+#header {
+  @include customized-flex($justify: space-between);
+
+  #aulavirtual-icon {
+    height: 78px;
+    width: 222px;
+  }
+
+  #user-profile-icon {
+    height: 71px;
+    width: 71px;
+  }
+
+  #close-sesion {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: map-get($map: $colors, $key: "primary");
+    color: background;
+    text-decoration: none;
+    @include border-radius();
+    cursor: pointer;
+  }
+
+  div {
+    @include customized-flex($justify: space-between);
+  }
+}
+
+#footer {
+  @include customized-flex();
+
+  .footer-left {
+    flex-grow: 1;
+    @include customized-flex();
+  }
+
+  .footer-right {
+    @include customized-flex($justify: flex-end);
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #close-sesion {
+    text-align: center;
+  }
+
+  #footer {
+    @include customized-flex(column);
+  }
+}

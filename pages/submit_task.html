@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álgebra abstracta</title>
+    <link rel="stylesheet" href="/styles/index.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <a href="/pages/home.html"><img id="aulavirtual-icon" src="/icons/aulavirtual_icon.svg" alt="aulavirtual icon"></a>
+            <div>
+                <a href="./user.html"><img id="user-profile-icon" src="/img/user_profile_icon.png"
+                        alt="user profile icon"></a>
+                <a id="close-sesion" href="/index.html">Cerrar sesión</a>
+            </div>
+        </div>
+        <hr>
+        <div id="main">
+            <h1 class="text-4xl my-4 font-bold text-center">Entrega tarea</h1>
+            <div
+                class="bg-red-500 text-white sm:w-1/2 sm:ml-auto sm:mr-auto rounded-[15px] bg-gradient-to-r from-[#4C0404] to-[rgba(178,10,10,.5)] p-8 flex flex-col justify-between items-center">
+                <p class="text-lg font-medium">Enunciado</p>
+                <form action="" method="get" class="w-full ">
+                    <div class="my-8 flex justify-center items-center">
+                        <label for="file-upload"
+                            class="cursor-pointer bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 transition">Agregar
+                            entrega</label>
+                        <input type="file" name="file-upload" id="file-upload" class="hidden">
+                    </div>
+                    <div class="flex justify-center items-center gap-6">
+                        <button type="submit"
+                            class="cursor-pointer bg-green-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-700 transition">Guardar</button>
+                        <button type="reset"
+                            class="cursor-pointer bg-gray-400 text-white px-4 py-2 rounded-lg shadow-md hover:bg-gray-700 transition">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div id="footer">
+            <div class="footer-left">
+                <p>© 2004-2025 aulavirtual.es - Servicios de Aula Web Premium, Cloud.</p>
+            </div>
+            <div class="footer-right">
+                <a href="help.html">Ayuda</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
