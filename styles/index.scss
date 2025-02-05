@@ -54,13 +54,12 @@ body {
   @include customized-flex($justify: space-between);
 
   #aulavirtual-icon {
-    height: 78px;
-    width: 222px;
+    width: 120px;
   }
 
   #user-profile-icon {
-    height: 71px;
-    width: 71px;
+    height: 55px;
+    width: 55px;
   }
 
   #close-sesion {
