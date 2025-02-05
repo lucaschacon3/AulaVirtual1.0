@@ -4,10 +4,10 @@ body {
   padding: 25px;
 }
 body h1 {
-  color: #F8E71C;
+  color: #f8e71c;
 }
 body h2 {
-  color: #A35AFF;
+  color: #a35aff;
 }
 body > div {
   border-radius: 15px;
@@ -53,8 +53,24 @@ body > div {
 #footer {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  background-color: #2d3748;
+  color: #fff;
+  padding: 1rem;
+}
+#footer p {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+#footer a {
+  text-decoration: underline;
+}
+#footer #info-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 #footer .footer-left {
   flex-grow: 1;
