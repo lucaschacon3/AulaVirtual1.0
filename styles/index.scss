@@ -1,15 +1,16 @@
 // Styles common to every page, except login
 $colors: (
-  "background": rgba(0,0,0,0.65),
-  "background2":#000,
-
-  "button-primary": #FF007F,
-  "button-secondary": #30E3CA,
+  "background": rgba(0, 0, 0, 0.65),
+  "background2": #000,
+  "background-footer": #2d3748,
+  "button-primary": #ff007f,
+  "button-secondary": #30e3ca,
 
   "text": #fff,
 
-  "button-primary-hover": #99004D,
-  "text-hover": #E6CCD6);
+  "button-primary-hover": #99004d,
+  "text-hover": #e6ccd6,
+);
 
 $padding: 25px;
 
@@ -28,16 +29,14 @@ body {
   background-image: url("../img/fondo2.png");
   margin: 0;
   padding: $padding;
-  h1{
-    color: #F8E71C 
-    
+  h1 {
+    color: #f8e71c;
   }
-  h2{
-    color:#A35AFF
+  h2 {
+    color: #a35aff;
   }
 
   > div {
-
     @include border-radius;
   }
 }
@@ -80,7 +79,23 @@ body {
 }
 
 #footer {
-  @include customized-flex();
+  @include customized-flex($justify: space-between);
+  background-color: map-get($map: $colors, $key: "background-footer");
+  color: map-get($map: $colors, $key: "text");
+  padding: 1rem;
+
+  p {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  #info-user {
+    @include customized-flex(column, $align: flex-start);
+  }
 
   .footer-left {
     flex-grow: 1;

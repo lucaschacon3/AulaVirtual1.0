@@ -1,71 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Subjects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Subjects</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="../styles/index.css" />
-</head>
+  <body class="bg-gray-100 min-h-screen flex flex-col">
+    <!-- Header -->
+    <div id="container">
+      <div id="header">
+        <a href="/pages/home.html"
+          ><img
+            id="aulavirtual-icon"
+            src="/icons/logo.svg"
+            alt="aulavirtual icon"
+            width=""
+        /></a>
+        <div class="flex items-center space-x-4">
+          <a href="./user.html">
+            <img
+              id="user-profile-icon"
+              src="/img/user_profile_icon.png"
+              alt="user profile icon"
+            />
+          </a>
+          <a
+            id="close-sesion"
+            href="/index.html"
+            class="bg-[#30E3CA] hover:bg-[#209983] text-black font-semibold py-2 px-4 rounded-lg transition duration-300"
+          >
+            Cerrar sesión
+          </a>
+        </div>
+      </div>
+      <hr />
 
-<body class="bg-gray-100 min-h-screen flex flex-col">
-  <!-- Header -->
-  <div id="container">
-    <div id="header">
-      <a href="/pages/home.html"><img id="aulavirtual-icon" src="/icons/aulavirtual_icon.svg"
-          alt="aulavirtual icon"></a>
-      <div>
-        <a href="./user.html"><img id="user-profile-icon" src="/img/user_profile_icon.png"
-            alt="user profile icon"></a>
-        <a id="close-sesion" href="/index.html">Cerrar sesión</a>
+      <!-- Content -->
+      <main class="container mx-auto p-6 flex-grow">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Algebra Card -->
+          <div
+            class="bg-black shadow-lg rounded-lg p-4 flex flex-col items-center"
+          >
+            <h2 class="text-xl font-semibold text-white mb-2">Algebra</h2>
+            <p class="text-white mb-4">
+              Explore the fundamentals of algebra: equations, inequalities, and
+              more.
+            </p>
+            <a
+              href="./subject.html"
+              class="bg-[#FF007F] text-white py-2 px-4 rounded-lg hover:bg-[#99004D] hover:text-[#E6CCD6]"
+              >View Course</a
+            >
+          </div>
+
+          <!-- Statistics Card -->
+          <div
+            class="bg-black shadow-lg rounded-lg p-4 flex flex-col items-center"
+          >
+            <h2 class="text-xl font-semibold text-white mb-2">Statistics</h2>
+            <p class="text-white mb-4">
+              Learn how to analyze data and understand probabilities.
+            </p>
+            <a
+              href="./subject.html"
+              class="bg-[#FF007F] text-white py-2 px-4 rounded-lg hover:bg-[#99004D] hover:text-[#E6CCD6]"
+              >View Course</a
+            >
+          </div>
+
+          <!-- Geometry Card -->
+          <div
+            class="bg-black shadow-lg rounded-lg p-4 flex flex-col items-center"
+          >
+            <h2 class="text-xl font-semibold text-white mb-2">Geometry</h2>
+            <p class="text-white mb-4">
+              Discover shapes, angles, and geometric principles.
+            </p>
+            <a
+              href="./subject.html"
+              class="bg-[#FF007F] text-white py-2 px-4 rounded-lg hover:bg-[#99004D] hover:text-[#E6CCD6]"
+              >View Course</a
+            >
+          </div>
+        </div>
+      </main>
+
+      <!-- User Footer -->
+      <hr />
+      <div id="footer">
+        <div class="footer-left">
+          <p class="text-white">
+            © 2004-2025 aulavirtual.es - Servicios de Aula Web Premium, Cloud.
+          </p>
+        </div>
+        <div class="footer-right">
+          <a href="help.html">Ayuda</a>
+        </div>
       </div>
     </div>
-    <hr>
-
-  <!-- Content -->
-  <main class="container mx-auto p-6 flex-grow">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Algebra Card -->
-      <div class="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center">
-        <h2 class="text-xl font-semibold text-gray-800 mb-2">Algebra</h2>
-        <p class="text-gray-600 mb-4">
-          Explore the fundamentals of algebra: equations, inequalities, and
-          more.
-        </p>
-        <a href="./subject.html" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">View Course</a>
-      </div>
-
-      <!-- Statistics Card -->
-      <div class="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center">
-        <h2 class="text-xl font-semibold text-gray-800 mb-2">Statistics</h2>
-        <p class="text-gray-600 mb-4">
-          Learn how to analyze data and understand probabilities.
-        </p>
-        <a href="./subject.html" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">View Course</a>
-      </div>
-
-      <!-- Geometry Card -->
-      <div class="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center">
-        <h2 class="text-xl font-semibold text-gray-800 mb-2">Geometry</h2>
-        <p class="text-gray-600 mb-4">
-          Discover shapes, angles, and geometric principles.
-        </p>
-        <a href="./subject.html" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">View Course</a>
-      </div>
-    </div>
-  </main>
-
-  <!-- User Footer -->
-  <hr>
-  <div id="footer">
-    <div class="footer-left">
-      <p>© 2004-2025 aulavirtual.es - Servicios de Aula Web Premium, Cloud.</p>
-    </div>
-    <div class="footer-right">
-      <a href="help.html">Ayuda</a>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>
