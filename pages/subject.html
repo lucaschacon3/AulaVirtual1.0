@@ -13,14 +13,25 @@
     <div id="container">
       <div id="header">
         <a href="/pages/home.html">
-          <img id="aulavirtual-icon" src="../icons/logo.svg" alt="aulavirtual icon" />
+          <img
+            id="aulavirtual-icon"
+            src="../icons/logo.svg"
+            alt="aulavirtual icon"
+          />
         </a>
         <div class="flex items-center space-x-4">
           <a href="./user.html">
-            <img id="user-profile-icon" src="/img/user_profile_icon.png" alt="user profile icon" />
+            <img
+              id="user-profile-icon"
+              src="/img/user_profile_icon.png"
+              alt="user profile icon"
+            />
           </a>
-          <a id="close-sesion" href="/index.html"
-            class="bg-[#30E3CA] hover:bg-[#209983] text-black font-semibold py-2 px-4 rounded-lg transition duration-300">
+          <a
+            id="close-sesion"
+            href="/index.html"
+            class="bg-[#30E3CA] hover:bg-[#209983] text-black font-semibold py-2 px-4 rounded-lg transition duration-300"
+          >
             Cerrar sesión
           </a>
         </div>
@@ -30,89 +41,182 @@
       <!-- MAIN CONTENT -->
       <main class="flex-grow flex flex-col items-center justify-center p-6">
         <div class="bg-black shadow-xl rounded-xl p-6 w-full max-w-3xl">
-          <h2 class="text-3xl font-bold text-white text-center mb-6">Mathematics</h2>
+          <h2 class="text-3xl font-bold text-white text-center mb-6">
+            Mathematics
+          </h2>
 
           <!-- SUBJECTS -->
           <div class="space-y-4">
-            <!-- Algebra -->
-            <div class="bg-[#FF007F] text-white p-3 rounded-lg cursor-pointer text-center text-xl font-semibold"
-              onclick="toggleSection('algebra')">
-              Elemental Algebra ⬇
+            <div
+              class="bg-[#FF007F] text-white p-3 rounded-lg cursor-pointer text-center text-xl font-semibold"
+            >
+              <a href="elemental_algebra.html">Elemental Algebra</a>
+              <button
+                onclick="toggleSection('elemental')"
+                class="ml-2 focus:outline-none"
+              >
+              🢃
+              </button>
+              <div class="flex justify-center p-4">
+                <audio
+                  controls
+                  class="w-full max-w-md rounded-lg shadow-lg"
+                  aria-label="Reproductor de audio: elemental algebra"
+                >
+                  <source
+                    src="../audio/elemental_algebra.mp3"
+                    type="audio/mpeg"
+                  />
+                  Tu navegador no soporta el elemento de audio.
+                </audio>
+              </div>
             </div>
-            <div id="algebra" class="hidden bg-[#fffff] p-4 rounded-lg transition-all">
+            <div
+              id="elemental"
+              class="hidden bg-[#302e2d] p-4 rounded-lg transition-all"
+            >
               <h3 class="text-2xl font-semibold mb-2 text-white">📖 Theory</h3>
-              <p class="text-white">Algebra studies structures, relations, and operations.</p>
+              <p class="text-white">
+                Algebra studies structures, relations, and operations.
+              </p>
               <ul class="list-disc ml-6 mt-2">
                 <li class="text-white">Equations and inequalities</li>
                 <li class="text-white">Polynomials and factoring</li>
               </ul>
 
-              <h3 class="text-2xl font-semibold mt-4 mb-2 text-white">📝 Assignments</h3>
+              <h3 class="text-2xl font-semibold mt-4 mb-2 text-white">
+                📝 Assignments
+              </h3>
               <ul class="list-disc ml-6">
                 <li class="text-white">Solve first-degree equations</li>
                 <li class="text-white">Factor polynomials</li>
               </ul>
 
-              <h3 class="text-2xl font-semibold mt-4 mb-2 text-white">📌 Deadlines</h3>
+              <h3 class="text-2xl font-semibold mt-4 mb-2 text-white">
+                📌 Deadlines
+              </h3>
               <ul class="list-disc ml-6">
-                <li class="text-white">Equation exercises - <span class="text-red-500">02/10/2025</span></li>
+                <li class="text-white">
+                  Equation exercises -
+                  <span class="text-red-500">02/10/2025</span>
+                </li>
               </ul>
             </div>
 
-            <!-- Geometry -->
-            <div class="bg-[#FF007F] text-white p-3 rounded-lg cursor-pointer text-center text-xl font-semibold"
-              onclick="toggleSection('geometry')">
-              Lineal Algebra ⬇
+            <div
+              class="bg-[#FF007F] text-white p-3 rounded-lg cursor-pointer text-center text-xl font-semibold"
+            >
+              <a href="lineal_algebra.html">Lineal Algebra</a>
+              <button
+                onclick="toggleSection('lineal')"
+                class="ml-2 focus:outline-none"
+              >
+              🢃
+              </button>
+              <div class="flex justify-center p-4">
+                <audio
+                  controls
+                  class="w-full max-w-md rounded-lg shadow-lg"
+                  aria-label="Reproductor de audio: elemental algebra"
+                >
+                  <source src="../audio/lineal_algebra.mp3" type="audio/mpeg" />
+                  Tu navegador no soporta el elemento de audio.
+                </audio>
+              </div>
             </div>
-            <div id="geometry" class="hidden bg-gray-100 p-4 rounded-lg transition-all">
-              <h3 class="text-2xl font-semibold mb-2">📖 Theory</h3>
-              <p>Geometry studies shapes, sizes, and properties of space.</p>
+            <div
+              id="lineal"
+              class="hidden bg-[#302e2d] p-4 rounded-lg transition-all"
+            >
+              <h3 class="text-2xl font-semibold mb-2 text-white">📖 Theory</h3>
+              <p class="text-white">
+                Lineal algebra studies shapes, sizes, and properties of space.
+              </p>
               <ul class="list-disc ml-6 mt-2">
-                <li>Geometric shapes</li>
-                <li>Pythagorean theorem</li>
+                <li class="text-white">Lineal algebra shapes</li>
+                <li class="text-white">Pythagorean theorem</li>
               </ul>
 
-              <h3 class="text-2xl font-semibold mt-4 mb-2">📝 Assignments</h3>
+              <h3 class="text-2xl font-semibold mt-4 mb-2 text-white">
+                📝 Assignments
+              </h3>
               <ul class="list-disc ml-6">
-                <li>Calculate areas of shapes</li>
-                <li>Prove the Pythagorean theorem</li>
+                <li class="text-white">Calculate areas of shapes</li>
+                <li class="text-white">Prove the Pythagorean theorem</li>
               </ul>
 
-              <h3 class="text-2xl font-semibold mt-4 mb-2">📌 Deadlines</h3>
+              <h3 class="text-2xl font-semibold mt-4 mb-2 text-white">
+                📌 Deadlines
+              </h3>
               <ul class="list-disc ml-6">
-                <li>Triangle exercises - <span class="text-red-500">02/12/2025</span></li>
+                <li class="text-white">
+                  Triangle exercises -
+                  <span class="text-red-500">02/12/2025</span>
+                </li>
               </ul>
             </div>
 
-            <!-- Statistics -->
-            <div class="bg-[#FF007F] text-white p-3 rounded-lg cursor-pointer text-center text-xl font-semibold"
-              onclick="toggleSection('statistics')">
-              Abstract Algebra ⬇
+            <div
+              class="bg-[#FF007F] text-white p-3 rounded-lg cursor-pointer text-center text-xl font-semibold"
+              
+            >
+              <a href="abstract_algebra.html">Abstract Algebra</a>
+              <button onclick="toggleSection('abstract')" class="ml-2 focus:outline-none">
+                🢃
+              </button>
+              <div class="flex justify-center p-4">
+                <audio
+                  controls
+                  class="w-full max-w-md rounded-lg shadow-lg"
+                  aria-label="Reproductor de audio: elemental algebra"
+                >
+                  <source
+                    src="../audio/abstract_algebra.mp3"
+                    type="audio/mpeg"
+                  />
+                  Tu navegador no soporta el elemento de audio.
+                </audio>
+              </div>
             </div>
-            <div id="statistics" class="hidden bg-gray-100 p-4 rounded-lg transition-all">
-              <h3 class="text-2xl font-semibold mb-2">📖 Theory</h3>
-              <p>Statistics analyzes data and draws conclusions.</p>
+            <div
+              id="abstract"
+              class="hidden p-4 rounded-lg transition-all bg-[#302e2d]"
+            >
+              <h3 class="text-2xl font-semibold mb-2 text-white">📖 Theory</h3>
+              <p class="text-white">
+                Abstract algebra analyzes data and draws conclusions.
+              </p>
               <ul class="list-disc ml-6 mt-2">
-                <li>Mean, median, and mode</li>
-                <li>Data distributions</li>
+                <li class="text-white">Mean, median, and mode</li>
+                <li class="text-white">Data distributions</li>
               </ul>
 
-              <h3 class="text-2xl font-semibold mt-4 mb-2">📝 Assignments</h3>
+              <h3 class="text-2xl font-semibold mt-4 mb-2 text-white">
+                📝 Assignments
+              </h3>
               <ul class="list-disc ml-6">
-                <li>Calculate measures of central tendency</li>
-                <li>Analyze data distributions</li>
+                <li class="text-white">
+                  Calculate measures of central tendency
+                </li>
+                <li class="text-white">Analyze data distributions</li>
               </ul>
 
-              <h3 class="text-2xl font-semibold mt-4 mb-2">📌 Deadlines</h3>
+              <h3 class="text-2xl font-semibold mt-4 mb-2 text-white">
+                📌 Deadlines
+              </h3>
               <ul class="list-disc ml-6">
-                <li>Data analysis - <span class="text-red-500">02/15/2025</span></li>
+                <li class="text-white">
+                  Data analysis - <span class="text-red-500">02/15/2025</span>
+                </li>
               </ul>
             </div>
           </div>
 
           <!-- HOME BUTTON -->
-          <a href="home.html"
-            class="block bg-[#30E3CA] text-white p-3 rounded-lg text-center mt-6 text-lg font-semibold hover:bg-[#209983]">
+          <a
+            href="home.html"
+            class="block bg-[#30E3CA] text-white p-3 rounded-lg text-center mt-6 text-lg font-semibold hover:bg-[#209983]"
+          >
             Go Back to Home
           </a>
         </div>
