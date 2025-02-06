@@ -35,8 +35,7 @@ body > div {
   align-items: center;
 }
 #header #aulavirtual-icon {
-  height: 78px;
-  width: 222px;
+  width: 120px;
 }
 #header #user-profile-icon {
   height: 71px;
@@ -65,24 +64,24 @@ body > div {
 #footer {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  background-color: #2d3748;
+  color: #fff;
+  padding: 1rem;
 }
-#footer .footer-left {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+#footer p {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
-#footer .footer-right {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-#footer .footer-right a {
+#footer a {
   text-decoration: underline;
+}
+#footer #info-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 #footer #help:hover {
   color: #e6ccd6;
