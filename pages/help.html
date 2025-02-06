@@ -4,36 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ayuda</title>
-    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
 
   <body>
     <div id="container">
+      <!-- Header -->
       <div id="header">
-        <a href="./pages/home.html"
+        <a href="./home.html"
           ><img
             id="aulavirtual-icon"
-            src="/icons/aulavirtual_icon.svg"
-            alt="aulavirtual icon"
+            src="../icons/logo.svg"
+            alt="(LUCAS)&sup2; logo"
         /></a>
-        <div>
+        <div class="header-right">
           <a href="./user.html"
             ><img
               id="user-profile-icon"
-              src="/img/user_profile_icon.png"
+              src="../img/user_profile_icon.png"
               alt="user profile icon"
           /></a>
-          <a id="close-sesion" href="/index.html">Cerrar sesión</a>
+          <a id="close-sesion" href="../index.html">Cerrar sesión</a>
         </div>
       </div>
+
       <hr />
+
+      <!-- Main content -->
       <div id="main">
         <h1 class="text-4xl my-4 text-center">
           Ayuda - Cómo usar el Aula virtual
         </h1>
         <div
-          class="bg-[#1d1b1b] text-white rounded-[15px] flex justify-center items-center p-8"
+          class="bg-[#2d3748] text-white rounded-[15px] flex justify-center items-center p-8"
         >
           <div>
             <h2 class="text-2xl mb-4">
@@ -108,7 +112,10 @@
           </div>
         </div>
       </div>
+
       <hr />
+
+      <!-- Footer -->
       <div id="footer">
         <div id="info-user">
           <p>User: <span class="font-bold">Student123</span></p>
