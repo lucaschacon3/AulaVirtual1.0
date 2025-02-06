@@ -2,12 +2,16 @@ body {
   background-image: url("../img/fondo2.png");
   margin: 0;
   padding: 25px;
+  color: #fff;
 }
 body h1 {
   color: #f8e71c;
 }
 body h2 {
   color: #a35aff;
+}
+body h3 {
+  font-style: italic;
 }
 body > div {
   border-radius: 15px;
@@ -16,6 +20,9 @@ body > div {
 #container {
   background-color: rgba(0, 0, 0, 0.65);
   padding: 25px;
+}
+#container .divider-1 {
+  color: #ff007f;
 }
 #container > hr {
   margin: 15px 0;
@@ -26,27 +33,41 @@ body > div {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: auto;
 }
 #header #aulavirtual-icon {
   width: 120px;
 }
+#header .header-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
 #header #user-profile-icon {
-  height: 55px;
-  width: 55px;
+  height: 71px;
+  width: 71px;
 }
 #header #close-sesion {
-  display: inline-block;
-  padding: 10px 20px;
-  color: background;
+  padding: 0.5rem 1rem;
+  background-color: #30e3ca;
+  color: #000;
+  font-weight: 600;
   text-decoration: none;
   border-radius: 15px;
-  cursor: pointer;
+}
+#header #close-sesion:hover {
+  background-color: #28b7a3;
+  color: #e6ccd6;
+  transition-duration: 300ms;
 }
 #header div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: auto;
 }
 
 #footer {
@@ -54,9 +75,11 @@ body > div {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: auto;
   background-color: #2d3748;
   color: #fff;
   padding: 1rem;
+  border-radius: 15px;
 }
 #footer p {
   font-size: 0.75rem;
@@ -70,22 +93,10 @@ body > div {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  gap: auto;
 }
-#footer .footer-left {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-#footer .footer-right {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-#footer .footer-right a {
-  text-decoration: underline;
+#footer #help:hover {
+  color: #e6ccd6;
 }
 
 @media only screen and (max-width: 640px) {
@@ -97,5 +108,6 @@ body > div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 15px;
   }
 }/*# sourceMappingURL=index.css.map */

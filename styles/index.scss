@@ -1,15 +1,15 @@
 // Styles common to every page, except login
 $colors: (
   "background": rgba(0, 0, 0, 0.65),
-  "background2": #000,
-  "background-footer": #2d3748,
-  "button-primary": #ff007f,
-  "button-secondary": #30e3ca,
-
+  "background2": #2d3748,
   "text": #fff,
-
-  "button-primary-hover": #99004d,
   "text-hover": #e6ccd6,
+  "delimiter-1": #ff007f,
+  "button-primary": #ff007f,
+  "button-primary-hover": #99004d,
+  "button-secondary": #30e3ca,
+  "button-secondary-hover": #28b7a3,
+  "background-footer": #2d3748,
 );
 
 $padding: 25px;
@@ -18,22 +18,35 @@ $padding: 25px;
   border-radius: 15px;
 }
 
-@mixin customized-flex($direction: row, $justify: center, $align: center) {
+@mixin customized-flex(
+  $direction: row,
+  $justify: center,
+  $align: center,
+  $gap: auto
+) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
+  gap: $gap;
 }
 
 body {
   background-image: url("../img/fondo2.png");
   margin: 0;
   padding: $padding;
+  color: map-get($map: $colors, $key: "text");
+
   h1 {
     color: #f8e71c;
   }
+
   h2 {
     color: #a35aff;
+  }
+
+  h3 {
+    font-style: italic;
   }
 
   > div {
@@ -44,6 +57,10 @@ body {
 #container {
   background-color: map-get($map: $colors, $key: "background");
   padding: $padding;
+
+  .divider-1 {
+    color: map-get($map: $colors, $key: "delimiter-1");
+  }
 
   > hr {
     margin: 15px 0;
@@ -57,19 +74,28 @@ body {
     width: 120px;
   }
 
+  .header-right {
+    @include customized-flex($gap: 1rem);
+  }
+
   #user-profile-icon {
-    height: 55px;
-    width: 55px;
+    height: 71px;
+    width: 71px;
   }
 
   #close-sesion {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: map-get($map: $colors, $key: "primary");
-    color: background;
+    padding: 0.5rem 1rem;
+    background-color: map-get($map: $colors, $key: "button-secondary");
+    color: #000;
+    font-weight: 600;
     text-decoration: none;
     @include border-radius();
-    cursor: pointer;
+
+    &:hover {
+      background-color: map-get($map: $colors, $key: "button-secondary-hover");
+      color: map-get($map: $colors, $key: "text-hover");
+      transition-duration: 300ms;
+    }
   }
 
   div {
@@ -82,6 +108,7 @@ body {
   background-color: map-get($map: $colors, $key: "background-footer");
   color: map-get($map: $colors, $key: "text");
   padding: 1rem;
+  @include border-radius();
 
   p {
     font-size: 0.75rem;
@@ -96,16 +123,9 @@ body {
     @include customized-flex(column, $align: flex-start);
   }
 
-  .footer-left {
-    flex-grow: 1;
-    @include customized-flex();
-  }
-
-  .footer-right {
-    @include customized-flex($justify: flex-end);
-
-    a {
-      text-decoration: underline;
+  #help {
+    &:hover {
+      color: map-get($map: $colors, $key: "text-hover");
     }
   }
 }
@@ -116,6 +136,6 @@ body {
   }
 
   #footer {
-    @include customized-flex(column);
+    @include customized-flex(column, $gap: 15px);
   }
 }
