@@ -99,7 +99,7 @@ body > div {
   color: #e6ccd6;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 639px) {
   #close-sesion {
     text-align: center;
   }

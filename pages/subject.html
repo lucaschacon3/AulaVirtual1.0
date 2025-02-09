@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Virtual Classroom - Mathematics</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Virtual Classroom - Algebra</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="../styles/index.css" />
-    <link rel="icon" type="image/png" href="../icons/logo.svg">
+    <link rel="icon" type="image/png" href="../icons/logo.svg" />
   </head>
 
   <body class="bg-gray-100 min-h-screen flex flex-col">
@@ -33,7 +33,7 @@
             href="../index.html"
             class="bg-[#30E3CA] hover:bg-[#209983] text-black font-semibold py-2 px-4 rounded-lg transition duration-300"
           >
-          Log out
+            Log out
           </a>
         </div>
       </div>
@@ -41,34 +41,39 @@
 
       <!-- MAIN CONTENT -->
       <main class="flex-grow flex flex-col items-center justify-center p-6">
-        <div class="bg-black shadow-xl rounded-xl p-6 w-full max-w-3xl">
-          <h2 class="text-3xl font-bold text-white text-center mb-6">
-            Mathematics
-          </h2>
+        <div class="bg-[#2d3748] shadow-xl rounded-xl p-6 w-full max-w-3xl">
+          <h2 class="text-3xl font-bold text-center mb-6">Algebra</h2>
 
           <!-- SUBJECTS -->
           <div class="space-y-4">
             <div
-              class="bg-[#FF007F] text-white p-3 rounded-lg cursor-pointer text-center text-xl font-semibold"
+              class="bg-[#FF007F] p-3 rounded-lg text-xl font-semibold flex items-center justify-between"
             >
-              <a href="elemental_algebra.html">Elemental Algebra</a>
-              <button
-                onclick="toggleSection('elemental')"
-                class="ml-2 focus:outline-none"
-              >
-              🢃
-              </button>
-              <div class="flex justify-center p-4">
-                <audio
-                  controls
-                  class="w-full max-w-md rounded-lg shadow-lg"
-                  aria-label="Reproductor de audio: elemental algebra"
+              <div class="flex-1 flex items-center justify-center ml-[76px]">
+                <a href="./elemental_algebra.html">Elemental algebra</a>
+                <button
+                  onclick="toggleSection('elemental')"
+                  class="ml-2 focus:outline-none cursor-pointer"
                 >
+                  🢃
+                </button>
+              </div>
+              <div
+                class="flex justify-center items-center p-4 border rounded-[15px]"
+              >
+                <button
+                  onclick="gestionarAudio('audioElemental')"
+                  class="cursor-pointer"
+                  aria-label="Audio player: elemental algebra"
+                >
+                  <img src="../icons/audio_icon.svg" alt="audio icon" />
+                </button>
+                <audio id="audioElemental">
                   <source
                     src="../audio/elemental_algebra.mp3"
                     type="audio/mpeg"
                   />
-                  Tu navegador no soporta el elemento de audio.
+                  Your browser does not support the audio element.
                 </audio>
               </div>
             </div>
@@ -76,106 +81,148 @@
               id="elemental"
               class="hidden bg-[#302e2d] p-4 rounded-lg transition-all"
             >
-              <h3 class="text-2xl font-semibold mb-2 text-white">📖 Theory</h3>
-              <p class="text-white">
-                Algebra studies structures, relations, and operations.
+              <h3 class="text-2xl font-semibold mb-2">📖 Theory</h3>
+              <p>
+                Fundamental algebraic concepts including variables, constants,
+                arithmetic operations, solving equations, polynomials, and
+                quadratic equations.
               </p>
               <ul class="list-disc ml-6 mt-2">
-                <li class="text-white">Equations and inequalities</li>
-                <li class="text-white">Polynomials and factoring</li>
+                <!-- Mirar cómo puedo hacerlo -->
+                <li>Introduction to algebra</li>
+                <li>Solving linear equations</li>
+                <li>Polynomials and their operations</li>
+                <li>Quadratic equations</li>
               </ul>
 
-              <h3 class="text-2xl font-semibold mt-4 mb-2 text-white">
-                📝 Assignments
-              </h3>
+              <h3 class="text-2xl font-semibold mt-4 mb-2">📝 Assignments</h3>
               <ul class="list-disc ml-6">
-                <li class="text-white">Solve first-degree equations</li>
-                <li class="text-white">Factor polynomials</li>
+                <li>Basic algebra exercises</li>
+                <li>Solve linear equations</li>
+                <li>Polynomial factorization</li>
+                <li>Solve quadratic equations</li>
               </ul>
 
-              <h3 class="text-2xl font-semibold mt-4 mb-2 text-white">
-                📌 Deadlines
-              </h3>
+              <h3 class="text-2xl font-semibold mt-4 mb-2">📌 Deadlines</h3>
               <ul class="list-disc ml-6">
-                <li class="text-white">
-                  Equation exercises -
-                  <span class="text-red-500">02/10/2025</span>
+                <li>
+                  Algebra basics - <span class="text-red-500">01/10/2025</span>
+                </li>
+                <li>
+                  Linear equations -
+                  <span class="text-red-500">05/10/2025</span>
+                </li>
+                <li>
+                  Polynomials - <span class="text-red-500">10/10/2025</span>
+                </li>
+                <li>
+                  Quadratic equations -
+                  <span class="text-red-500">15/10/2025</span>
                 </li>
               </ul>
             </div>
 
             <div
-              class="bg-[#FF007F] text-white p-3 rounded-lg cursor-pointer text-center text-xl font-semibold"
+              class="bg-[#FF007F] p-3 rounded-lg text-xl font-semibold flex items-center justify-between"
             >
-              <a href="lineal_algebra.html">Lineal Algebra</a>
-              <button
-                onclick="toggleSection('lineal')"
-                class="ml-2 focus:outline-none"
-              >
-              🢃
-              </button>
-              <div class="flex justify-center p-4">
-                <audio
-                  controls
-                  class="w-full max-w-md rounded-lg shadow-lg"
-                  aria-label="Reproductor de audio: elemental algebra"
+              <div class="flex-1 flex items-center justify-center ml-[76px]">
+                <a href="./linear_algebra.html">Linear algebra</a>
+                <button
+                  onclick="toggleSection('linear')"
+                  class="ml-2 focus:outline-none cursor-pointer"
                 >
-                  <source src="../audio/lineal_algebra.mp3" type="audio/mpeg" />
-                  Tu navegador no soporta el elemento de audio.
+                  🢃
+                </button>
+              </div>
+              <div
+                class="flex justify-center items-center p-4 border rounded-[15px]"
+              >
+                <button
+                  onclick="gestionarAudio('audioLinear')"
+                  class="cursor-pointer"
+                  aria-label="Audio player: linear algebra"
+                >
+                  <img src="../icons/audio_icon.svg" alt="audio icon" />
+                </button>
+                <audio id="audioLinear">
+                  <source src="../audio/linear_algebra.mp3" type="audio/mpeg" />
+                  Your browser does not support the audio element.
                 </audio>
               </div>
             </div>
             <div
-              id="lineal"
+              id="linear"
               class="hidden bg-[#302e2d] p-4 rounded-lg transition-all"
             >
-              <h3 class="text-2xl font-semibold mb-2 text-white">📖 Theory</h3>
-              <p class="text-white">
-                Lineal algebra studies shapes, sizes, and properties of space.
+              <h3 class="text-2xl font-semibold mb-2">📖 Theory</h3>
+              <p>
+                Linear algebra explores vector spaces, transformations, and
+                systems of equations.
               </p>
               <ul class="list-disc ml-6 mt-2">
-                <li class="text-white">Lineal algebra shapes</li>
-                <li class="text-white">Pythagorean theorem</li>
+                <li>Vector spaces and linear independence</li>
+                <li>Linear transformations and matrices</li>
+                <li>Eigenvalues and eigenvectors</li>
+                <li>Solving systems of linear equations</li>
               </ul>
 
-              <h3 class="text-2xl font-semibold mt-4 mb-2 text-white">
-                📝 Assignments
-              </h3>
+              <h3 class="text-2xl font-semibold mt-4 mb-2">📝 Assignments</h3>
               <ul class="list-disc ml-6">
-                <li class="text-white">Calculate areas of shapes</li>
-                <li class="text-white">Prove the Pythagorean theorem</li>
+                <li>Identify vector subspaces</li>
+                <li>Compute matrix transformations</li>
+                <li>Find eigenvalues and eigenvectors</li>
+                <li>Solve linear systems using matrices</li>
               </ul>
 
-              <h3 class="text-2xl font-semibold mt-4 mb-2 text-white">
-                📌 Deadlines
-              </h3>
+              <h3 class="text-2xl font-semibold mt-4 mb-2">📌 Deadlines</h3>
               <ul class="list-disc ml-6">
-                <li class="text-white">
-                  Triangle exercises -
-                  <span class="text-red-500">02/12/2025</span>
+                <li>
+                  Vector space exercises -
+                  <span class="text-red-500">03/15/2025</span>
+                </li>
+                <li>
+                  Matrix transformations -
+                  <span class="text-red-500">03/29/2025</span>
+                </li>
+                <li>
+                  Eigenvalues & transformations -
+                  <span class="text-red-500">03/22/2025</span>
+                </li>
+                <li>
+                  Solving linear systems -
+                  <span class="text-red-500">04/05/2025</span>
                 </li>
               </ul>
             </div>
 
             <div
-              class="bg-[#FF007F] text-white p-3 rounded-lg cursor-pointer text-center text-xl font-semibold"
-              
+              class="bg-[#FF007F] p-3 rounded-lg text-xl font-semibold flex items-center justify-between"
             >
-              <a href="./abstract_algebra.html">Abstract Algebra</a>
-              <button onclick="toggleSection('abstract')" class="ml-2 focus:outline-none">
-                🢃
-              </button>
-              <div class="flex justify-center p-4">
-                <audio
-                  controls
-                  class="w-full max-w-md rounded-lg shadow-lg"
-                  aria-label="Reproductor de audio: elemental algebra"
+              <div class="flex-1 flex items-center justify-center ml-[76px]">
+                <a href="./abstract_algebra.html">Abstract algebra</a>
+                <button
+                  onclick="toggleSection('abstract')"
+                  class="ml-2 focus:outline-none cursor-pointer"
                 >
+                  🢃
+                </button>
+              </div>
+              <div
+                class="flex justify-center items-center p-4 border rounded-[15px]"
+              >
+                <button
+                  onclick="gestionarAudio('audioAbstract')"
+                  class="cursor-pointer"
+                  aria-label="Audio player: abstract algebra"
+                >
+                  <img src="../icons/audio_icon.svg" alt="audio icon" />
+                </button>
+                <audio id="audioAbstract">
                   <source
                     src="../audio/abstract_algebra.mp3"
                     type="audio/mpeg"
                   />
-                  Tu navegador no soporta el elemento de audio.
+                  Your browser does not support the audio element.
                 </audio>
               </div>
             </div>
@@ -183,31 +230,43 @@
               id="abstract"
               class="hidden p-4 rounded-lg transition-all bg-[#302e2d]"
             >
-              <h3 class="text-2xl font-semibold mb-2 text-white">📖 Theory</h3>
-              <p class="text-white">
-                Abstract algebra analyzes data and draws conclusions.
+              <h3 class="text-2xl font-semibold mb-2">📖 Theory</h3>
+              <p>
+                Abstract algebra explores fundamental algebraic structures and
+                their properties.
               </p>
               <ul class="list-disc ml-6 mt-2">
-                <li class="text-white">Mean, median, and mode</li>
-                <li class="text-white">Data distributions</li>
+                <li>Groups and subgroups</li>
+                <li>Rings and fields</li>
+                <li>Homomorphisms and isomorphisms</li>
+                <li>Factorization and group actions</li>
               </ul>
 
-              <h3 class="text-2xl font-semibold mt-4 mb-2 text-white">
-                📝 Assignments
-              </h3>
+              <h3 class="text-2xl font-semibold mt-4 mb-2">📝 Assignments</h3>
               <ul class="list-disc ml-6">
-                <li class="text-white">
-                  Calculate measures of central tendency
+                <li>Identify subgroups of a given group</li>
+                <li>Prove properties of rings and fields</li>
+                <li>Verify if a function is a homomorphism</li>
+                <li>Factorize polynomials using group actions</li>
+              </ul>
+
+              <h3 class="text-2xl font-semibold mt-4 mb-2">📌 Deadlines</h3>
+              <ul class="list-disc ml-6">
+                <li>
+                  Group theory exercises -
+                  <span class="text-red-500">03/15/2025</span>
                 </li>
-                <li class="text-white">Analyze data distributions</li>
-              </ul>
-
-              <h3 class="text-2xl font-semibold mt-4 mb-2 text-white">
-                📌 Deadlines
-              </h3>
-              <ul class="list-disc ml-6">
-                <li class="text-white">
-                  Data analysis - <span class="text-red-500">02/15/2025</span>
+                <li>
+                  Rings & fields problems -
+                  <span class="text-red-500">03/22/2025</span>
+                </li>
+                <li>
+                  Homomorphism exercises -
+                  <span class="text-red-500">03/29/2025</span>
+                </li>
+                <li>
+                  Factorization problems -
+                  <span class="text-red-500">04/05/2025</span>
                 </li>
               </ul>
             </div>
@@ -215,8 +274,8 @@
 
           <!-- HOME BUTTON -->
           <a
-            href="home.html"
-            class="block bg-[#30E3CA] text-white p-3 rounded-lg text-center mt-6 text-lg font-semibold hover:bg-[#209983]"
+            href="./home.html"
+            class="block bg-[#30E3CA] p-3 rounded-lg text-center mt-6 text-lg font-semibold hover:bg-[#28b7a3] hover:text-[#e6ccd6] transition duration-300"
           >
             Go Back to Home
           </a>
@@ -232,7 +291,7 @@
         </div>
         <div>
           <a href="./help.html">
-            <p>Ayuda</p>
+            <p>Help</p>
           </a>
         </div>
         <div>
@@ -245,6 +304,11 @@
       function toggleSection(id) {
         let section = document.getElementById(id);
         section.classList.toggle("hidden");
+      }
+
+      function gestionarAudio(id) {
+        let audio = document.getElementById(id);
+        audio.play();
       }
     </script>
   </body>

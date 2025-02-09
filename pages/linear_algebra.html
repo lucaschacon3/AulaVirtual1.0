@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abstract algebra</title>
+    <title>Linear algebra</title>
     <link rel="stylesheet" href="../styles/index.css" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="icon" type="image/png" href="../icons/logo.svg" />
@@ -42,28 +42,29 @@
             Go Back
           </a>
           <h1 class="text-4xl my-4 font-semibold text-center flex-1 mr-[90.44px]">
-            Abstract algebra
+            Linear algebra
           </h1>
         </div>
 
         <div class="bg-[#2d3748] rounded-[15px] p-8">
-          <!-- Module 1: Groups and Subgroups -->
+          <!-- Module 1: Introduction to Vector Spaces -->
           <div class="flex flex-col lg:flex-row justify-between items-center">
-            <div id="module1" class="w-full lg:w-1/2 lg:pr-2">
+            <div class="w-full lg:w-1/2 lg:pr-2">
               <h2 class="text-3xl underline mb-8">
-                Module 1: Groups and Subgroups
+                Module 1: Introduction to Vector Spaces
               </h2>
               <p>
                 <span class="font-semibold">Objective:</span> This module
-                introduces the concept of groups, their properties, and how
-                subgroups can be derived from a given group.
+                introduces the basic concepts of vector spaces, subspaces, and
+                linear independence, laying the foundation for solving linear
+                systems.
               </p>
 
               <div class="flex items-center mt-6">
                 <img src="../img/pdf_icon.png" alt="pdf icon" />
                 <a
-                  href="../resources/abstract_algebra.pdf"
-                  download="Groups_and_Subgroups.pdf"
+                  href="../resources/linear_algebra.pdf"
+                  download="Vector_Spaces.pdf"
                   class="pl-4"
                   >Theory PDF</a
                 >
@@ -78,17 +79,17 @@
                   class="mx-[8px]"
                 />
                 <a href="./submit_task.html" class="pl-4">
-                  Identify subgroups of a given group
+                  Identify vector subspaces
                 </a>
               </div>
             </div>
 
-            <!-- Vídeo: https://youtu.be/ptRmr8LFfc4?si=zuMdCf6QLnVk-_Wl -->
+            <!-- Vídeo: https://youtu.be/EP2ghkO0lSk?si=PjPTBI8sqcZ_hUdo -->
             <div class="my-8 w-2/3 lg:w-1/2 lg:pl-2 flex justify-center">
               <div class="w-full lg:w-1/2 aspect-[16/9]">
                 <iframe
                   class="w-full h-full"
-                  src="https://www.youtube.com/embed/ptRmr8LFfc4?si=30gvyjPZ2_pxUmGJ"
+                  src="https://www.youtube.com/embed/EP2ghkO0lSk?si=Wb5Q2YnJr0bHk-OZ"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -101,24 +102,23 @@
 
           <hr class="divider-1 border-t w-full my-12" />
 
-          <!-- Module 2: Rings and Fields -->
+          <!-- Module 2: Linear Transformations -->
           <div class="flex flex-col lg:flex-row justify-between items-center">
             <div class="w-full lg:w-1/2 lg:pr-2">
               <h2 class="text-3xl underline mb-8">
-                Module 2: Rings and Fields
+                Module 2: Linear Transformations
               </h2>
               <p>
-                <span class="font-semibold">Objective:</span> Learn about rings
-                and fields, two essential algebraic structures. Understand how
-                these structures interact and their applications in different
-                mathematical contexts.
+                <span class="font-semibold">Objective:</span> Learn about linear
+                transformations, their matrix representation, and their
+                application in solving problems in different fields.
               </p>
 
               <div class="flex items-center mt-6">
                 <img src="../img/pdf_icon.png" alt="pdf icon" />
                 <a
-                  href="../resources/abstract_algebra.pdf"
-                  download="Rings_and_Fields.pdf"
+                  href="../resources/linear_algebra.pdf"
+                  download="Linear_Transformations.pdf"
                   class="pl-4"
                   >Theory PDF</a
                 >
@@ -133,7 +133,7 @@
                   class="mx-[8px]"
                 />
                 <a href="./submit_task.html" class="pl-4">
-                  Prove properties of rings and fields
+                  Compute matrix transformations
                 </a>
               </div>
             </div>
@@ -142,8 +142,8 @@
               class="my-8 lg:w-1/2 lg:pl-2 flex justify-center hover:scale-110 2xl:hover:scale-130 transition"
             >
               <img
-                src="../img/summarizes-the-axioms-that-define-groups-rings-and-field.png"
-                alt="Solving Linear Equations"
+                src="../img/linear-transformations.jpg"
+                alt="Linear Transformations"
                 class="w-[525px] h-[267px]"
               />
             </div>
@@ -151,24 +151,24 @@
 
           <hr class="divider-1 border-t w-full my-12" />
 
-          <!-- Module 3: Homomorphisms and Isomorphisms -->
+          <!-- Module 3: Eigenvalues and Eigenvectors -->
           <div class="flex flex-col lg:flex-row justify-between items-center">
             <div class="w-full lg:w-1/2 lg:pr-2">
               <h2 class="text-3xl underline mb-8">
-                Module 3: Homomorphisms and Isomorphisms
+                Module 3: Eigenvalues and Eigenvectors
               </h2>
               <p>
                 <span class="font-semibold">Objective:</span> Study the concepts
-                of homomorphisms and isomorphisms, two important operations in
-                algebra that help define structural relationships between
-                algebraic objects.
+                of eigenvalues and eigenvectors, their properties, and their
+                role in solving linear systems and understanding matrix
+                behavior.
               </p>
 
               <div class="flex items-center mt-6">
                 <img src="../img/pdf_icon.png" alt="pdf icon" />
                 <a
-                  href="../resources/abstract_algebra.pdf"
-                  download="Homomorphisms_and_Isomorphisms.pdf"
+                  href="../resources/linear_algebra.pdf"
+                  download="Eigenvalues_Eigenvectors.pdf"
                   class="pl-4"
                   >Theory PDF</a
                 >
@@ -183,17 +183,17 @@
                   class="mx-[8px]"
                 />
                 <a href="./submit_task.html" class="pl-4">
-                  Verify if a function is a homomorphism
+                  Find eigenvalues and eigenvectors
                 </a>
               </div>
             </div>
 
-            <!-- Vídeo: https://youtu.be/lbCQgzHdx1Q?si=JE6H4vfQ1upxy9FN -->
+            <!-- Vídeo: https://youtu.be/TQvxWaQnrqI?si=SPwKN55obFaO0Uxl -->
             <div class="my-8 w-2/3 lg:w-1/2 lg:pl-2 flex justify-center">
               <div class="w-full lg:w-1/2 aspect-[16/9]">
                 <iframe
                   class="w-full h-full"
-                  src="https://www.youtube.com/embed/lbCQgzHdx1Q?si=-LWp9AGTBsjIJRqT"
+                  src="https://www.youtube.com/embed/TQvxWaQnrqI?si=TQrPDy7LJK0LayU5"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -206,24 +206,23 @@
 
           <hr class="divider-1 border-t w-full my-12" />
 
-          <!-- Module 4: Factorization and Group Actions -->
+          <!-- Module 4: Solving Linear Systems -->
           <div class="flex flex-col lg:flex-row justify-between items-center">
             <div class="w-full lg:w-1/2 lg:pr-2">
               <h2 class="text-3xl underline mb-8">
-                Module 4: Factorization and Group Actions
+                Module 4: Solving Linear Systems
               </h2>
               <p>
-                <span class="font-semibold">Objective:</span> Explore
-                factorization techniques in algebra and understand group
-                actions, a fundamental concept used to study symmetries in
-                algebraic structures.
+                <span class="font-semibold">Objective:</span> Learn techniques
+                to solve systems of linear equations, including matrix methods
+                and the use of Gaussian elimination.
               </p>
 
               <div class="flex items-center mt-6">
                 <img src="../img/pdf_icon.png" alt="pdf icon" />
                 <a
-                  href="../resources/abstract_algebra.pdf"
-                  download="Factorization_and_Group_Actions.pdf"
+                  href="../resources/linear_algebra.pdf"
+                  download="Solving_Linear_Systems.pdf"
                   class="pl-4"
                   >Theory PDF</a
                 >
@@ -238,7 +237,7 @@
                   class="mx-[8px]"
                 />
                 <a href="./submit_task.html" class="pl-4">
-                  Factorize polynomials using group actions
+                  Solve linear systems using matrices
                 </a>
               </div>
             </div>
@@ -247,9 +246,9 @@
               class="my-8 lg:w-1/2 lg:pl-2 flex justify-center hover:scale-110 2xl:hover:scale-130 transition"
             >
               <img
-                src="../img/Group-Action.png"
-                alt="Solving Linear Equations"
-                class="w-[525px] h-[267px]"
+                src="../img/solving-linear-systems.png"
+                alt="Linear Transformations"
+                class="bg-white w-[525px] h-[267px]"
               />
             </div>
           </div>

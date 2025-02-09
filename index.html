@@ -4,55 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sing In</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="icon" type="image/png" href="./icons/logo.svg">
+    <link rel="icon" type="image/png" href="./icons/logo.svg" />
   </head>
   <body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <div class="w-full max-w-md p-6 bg-[rgba(0,0,0)] rounded-2xl shadow-lg">
+    <div
+      class="w-full max-w-md p-6 bg-[rgba(0,0,0,0.65)] rounded-2xl shadow-lg"
+    >
       <img class="m-auto" src="./icons/logo.svg" alt="icono" width="100px" />
       <hr class="mb-3" />
-      <h1 class="text-2xl font-bold text-center mb-6 text-white">Sign In</h1>
+      <h1 class="text-2xl font-bold text-center mb-6">Sign In</h1>
 
       <!-- Form -->
       <form class="space-y-4" action="./pages/home.html">
         <!-- Username Field -->
         <div>
-          <label for="username" class="block text-sm font-medium text-white"
+          <label for="username" class="block text-sm font-medium"
             >Username</label
           >
           <input
             type="text"
             id="username"
             placeholder="Enter your username"
-            class="w-full mt-1 px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black"
+            class="bg-white w-full mt-1 px-3 py-2 border border-white rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black"
           />
         </div>
 
         <!-- Password Field -->
         <div>
-          <label for="password" class="block text-sm font-medium text-white"
+          <label for="password" class="block text-sm font-medium"
             >Password</label
           >
           <input
             type="password"
             id="password"
             placeholder="Enter your password"
-            class="w-full mt-1 px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black"
+            class="bg-white w-full mt-1 px-3 py-2 border border-white rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black"
           />
         </div>
 
         <!-- Forgot Password Link -->
         <div class="text-right">
-          <a href="#" class="text-sm text-white hover:underline"
-            >Forgot your password?</a
-          >
+          <a href="#" class="text-sm hover:underline">Forgot your password?</a>
         </div>
 
         <!-- Login Button -->
         <button
           type="submit"
-          class="w-full bg-[#FF007F] text-white py-2 px-4 rounded-lg hover:bg-[#99004D] hover:text-[#E6CCD6] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+          class="w-full bg-[#FF007F] py-2 px-4 rounded-lg hover:bg-[#99004D] hover:text-[#E6CCD6] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
         >
           Sign In
         </button>
@@ -61,7 +61,7 @@
       <!-- Separator -->
       <div class="flex items-center my-6">
         <div class="border-t border-gray-300 flex-grow"></div>
-        <span class="px-3 text-white text-sm">or continue with</span>
+        <span class="px-3 text-sm">or continue with</span>
         <div class="border-t border-gray-300 flex-grow"></div>
       </div>
 
@@ -78,7 +78,7 @@
           Sign in with Google
         </button>
         <button
-          class="w-full flex items-center justify-center bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700"
+          class="w-full flex items-center justify-center bg-blue-600 py-2 px-4 rounded-lg hover:bg-blue-700"
         >
           <img
             src="https://www.svgrepo.com/show/431792/meta.svg"

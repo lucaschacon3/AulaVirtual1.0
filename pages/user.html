@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="../styles/index.css" />
-    <link rel="icon" type="image/png" href="../icons/logo.svg">
-
+    <link rel="icon" type="image/png" href="../icons/logo.svg" />
   </head>
   <body class="bg-gray-100 min-h-screen">
     <!-- Main Container -->
@@ -15,74 +14,72 @@
       <header
         class="flex items-center justify-between bg-[#000000D9] p-4 rounded-lg shadow-md mb-6"
       >
-      <div><a href="./home.html"><img src="../icons/logo.svg" alt="logo" width="120px"></a></div>
-        <p class="text-white">
-          Welcome, <span class="font-semibold text-white">User</span>
-        </p>
+        <div>
+          <a href="./home.html"
+            ><img src="../icons/logo.svg" alt="logo" width="120px"
+          /></a>
+        </div>
+        <p>Welcome, <span class="font-semibold">User</span></p>
       </header>
 
       <!-- Main Content -->
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <!-- Course Progress Bar -->
-        <section class="lg:col-span-1 bg-[#000000D9] p-4 rounded-lg shadow-md">
-          <h2 class="text-lg font-semibold text-white mb-4">
-            Course Progress
-          </h2>
+        <section class="lg:col-span-1 bg-[#2d3748] p-4 rounded-lg shadow-md">
+          <h2 class="text-lg font-semibold mb-4">Course Progress</h2>
           <div class="mb-4">
-            <p class="text-sm text-white">
-              Course: Algebra
-            </p>
+            <p class="text-sm">Course: Algebra</p>
             <div class="relative w-full bg-gray-200 rounded-full h-4 mt-2">
               <div
                 class="absolute top-0 left-0 h-4 bg-blue-500 rounded-full"
                 style="width: 75%"
               ></div>
             </div>
-            <p class="text-right text-sm text-white mt-2">75% completed</p>
+            <p class="text-right text-sm mt-2">75% completed</p>
           </div>
           <div>
-            <p class="text-sm text-white">Course: Geometry</p>
+            <p class="text-sm">Course: Geometry</p>
             <div class="relative w-full bg-gray-200 rounded-full h-4 mt-2">
               <div
                 class="absolute top-0 left-0 h-4 bg-green-500 rounded-full"
                 style="width: 40%"
               ></div>
             </div>
-            <p class="text-right text-sm text-white mt-2">40% completed</p>
+            <p class="text-right text-sm mt-2">40% completed</p>
           </div>
           <div>
-            <p class="text-sm text-white">Course: Statistics</p>
+            <p class="text-sm">Course: Statistics</p>
             <div class="relative w-full bg-gray-200 rounded-full h-4 mt-2">
               <div
                 class="absolute top-0 left-0 h-4 bg-yellow-500 rounded-full"
                 style="width: 60%"
               ></div>
             </div>
-            <p class="text-right text-sm text-white mt-2">60% completed</p>
+            <p class="text-right text-sm mt-2">60% completed</p>
           </div>
         </section>
 
         <!-- Calendar -->
-        <section class="lg:col-span-1 bg-[#000000D9] p-4 rounded-lg shadow-md">
-          <h2 class="text-lg font-semibold text-white mb-4">Calendar</h2>
-          <div class="grid grid-cols-7 gap-1 text-center text-white-700">
+        <section class="lg:col-span-1 bg-[#2d3748] p-4 rounded-lg shadow-md">
+          <h2 class="text-lg font-semibold mb-4">Calendar</h2>
+          <div class="grid grid-cols-7 gap-1 text-center -700">
             <!-- Weekdays -->
-            <div class="font-semibold text-white">Mon</div>
-            <div class="font-semibold text-white">Tue</div>
-            <div class="font-semibold text-white">Wed</div>
-            <div class="font-semibold text-white">Thu</div>
-            <div class="font-semibold text-white">Fri</div>
-            <div class="font-semibold text-white">Sat</div>
-            <div class="font-semibold text-white">Sun</div>
+            <div class="font-semibold">Mon</div>
+            <div class="font-semibold">Tue</div>
+            <div class="font-semibold">Wed</div>
+            <div class="font-semibold">Thu</div>
+            <div class="font-semibold">Fri</div>
+            <div class="font-semibold">Sat</div>
+            <div class="font-semibold">Sun</div>
 
             <!-- Dates (Example) -->
-            <div class="text-white">29</div>
-            <div class="text-white">30</div>
-            <div class="text-white">31</div>
+            <div class="">29</div>
+            <div class="">30</div>
+            <div class="">31</div>
             <div class="bg-blue-100 rounded-full">1</div>
             <div class="bg-blue-100 rounded-full">2</div>
-            <div class="bg-blue-500 text-white rounded-full">3</div>
-            <div class="text-white">4</div>
+            <div class="bg-blue-500 rounded-full">3</div>
+            <div class="">4</div>
 
             <!-- More Days -->
             <div>5</div>
@@ -96,11 +93,9 @@
         </section>
 
         <!-- Grade Table -->
-        <section class="lg:col-span-1 bg-[#000000D9] p-4 rounded-lg shadow-md">
-          <h2 class="text-lg font-semibold text-white mb-4">
-            Grade Table
-          </h2>
-          <table class="w-full text-sm text-left text-white">
+        <section class="lg:col-span-1 bg-[#2d3748] p-4 rounded-lg shadow-md">
+          <h2 class="text-lg font-semibold mb-4">Grade Table</h2>
+          <table class="w-full text-sm text-left">
             <thead class="bg-gray-100 text-black">
               <tr>
                 <th class="py-2 px-4">Subject</th>
@@ -110,7 +105,7 @@
             </thead>
             <tbody>
               <tr>
-                <td class="py-2 px-4">Algebra</td>
+                <td class="py-2 px-4"><a href="./subject.html">Algebra</a></td>
                 <td class="py-2 px-4">8.5/10</td>
                 <td class="py-2 px-4">
                   <span class="text-green-600 font-semibold">Passed</span>
@@ -133,18 +128,14 @@
             </tbody>
           </table>
         </section>
-
       </div>
-      <br>
+      <br />
       <a
-      href="./home.html"
-      class="bg-[#30E3CA] hover:bg-[#209983] text-white px-6 py-3 rounded-lg text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-blue-400 text-center"
-    >
-      Back
-    </a>
-    
+        href="./home.html"
+        class="bg-[#30E3CA] hover:bg-[#28b7a3] hover:text-[#e6ccd6] transition duration-300 px-6 py-3 rounded-lg text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-blue-400 text-center"
+      >
+        Back
+      </a>
     </div>
-    
   </body>
-  
 </html>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tasks</title>
+    <title>Assignment submission</title>
     <link rel="stylesheet" href="../styles/index.css" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <link rel="icon" type="image/png" href="../icons/logo.svg">
+    <link rel="icon" type="image/png" href="../icons/logo.svg" />
   </head>
 
   <body>
@@ -34,37 +34,135 @@
 
       <!-- Main content -->
       <div id="main">
-        <h1 class="text-4xl my-4 font-bold text-center">Entrega tarea</h1>
+        <h1 class="text-4xl my-4 font-bold text-center">
+          Assignment submission
+        </h1>
+
         <div
-          class="bg-red-500 text-white sm:w-1/2 sm:ml-auto sm:mr-auto rounded-[15px] bg-gradient-to-r from-[#4C0404] to-[rgba(178,10,10,.5)] p-8 flex flex-col justify-between items-center"
+          class="bg-[#2d3748] rounded-[15px] p-8 xl:w-4/5 2xl:w-3/5 sm:mx-auto flex flex-col justify-between items-center"
         >
-          <p class="text-lg font-medium">Enunciado</p>
-          <form action="" method="get" class="w-full">
-            <div class="my-8 flex justify-center items-center">
-              <label
-                for="file-upload"
-                class="cursor-pointer bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 transition"
-                >Agregar entrega</label
-              >
-              <input
-                type="file"
-                name="file-upload"
-                id="file-upload"
-                class="hidden"
-              />
-            </div>
+          <!--<p class="text-lg font-medium">Enunciado</p>-->
+          <div class="container mx-auto p-6">
+            <h2 class="text-3xl font-semibold mb-4">Basic Algebra Exercises</h2>
+            <p class="text-lg mb-6">
+              <span class="font-semibold">Objective:</span> This assignment aims
+              to strengthen your understanding of basic algebraic concepts and
+              enhance your problem-solving skills. Complete the following tasks
+              carefully, and ensure you show all necessary steps in your
+              solutions.
+            </p>
+
+            <h3 class="text-2xl font-semibold mb-4">Instructions:</h3>
+
+            <ol class="list-decimal pl-6 text-lg space-y-4">
+              <li>
+                <span class="font-semibold"
+                  >Simplify Algebraic Expressions</span
+                >
+                <p class="ml-4">
+                  Simplify the following expressions by combining like terms:
+                </p>
+                <ul class="list-disc pl-8 space-y-2">
+                  <li>3x + 5x - 7 + 2</li>
+                  <li>4a - 3b + 2a + 6b</li>
+                  <li>8x² - 4x + 3x² - 2x</li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="font-semibold">Solve Linear Equations</span>
+                <p class="ml-4">Solve for x in the following equations:</p>
+                <ul class="list-disc pl-8 space-y-2">
+                  <li>5x + 7 = 22</li>
+                  <li>3(2x - 4) = 18</li>
+                  <li>(2x + 5) / 4 = 3</li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="font-semibold">Factorize Simple Polynomials</span>
+                <p class="ml-4">Factor the following polynomials:</p>
+                <ul class="list-disc pl-8 space-y-2">
+                  <li>x² + 7x + 12</li>
+                  <li>3x² - 15x</li>
+                  <li>4x² - 25</li>
+                </ul>
+              </li>
+
+              <li>
+                <span class="font-semibold"
+                  >Operations with Algebraic Fractions</span
+                >
+                <p class="ml-4">Perform the following operations:</p>
+                <ul class="list-disc pl-8 space-y-2">
+                  <li>Simplify: (3x² + 5x) / x</li>
+                  <li>Add: (4 / x) + (3 / x²)</li>
+                  <li>Multiply: (2x + 1) / x² × x² / (x + 1)</li>
+                </ul>
+              </li>
+            </ol>
+
+            <h3 class="text-2xl font-semibold mt-6 mb-4">
+              Submission Guidelines:
+            </h3>
+            <ul class="list-disc pl-6 text-lg space-y-2">
+              <li>Show all work clearly, step-by-step, for each problem.</li>
+              <li>
+                Submit your answers in a neat and readable format (typed or
+                handwritten).
+              </li>
+              <li>
+                Make sure to double-check your solutions before submission.
+              </li>
+            </ul>
+
+            <h3 class="text-2xl font-semibold mt-6 mb-4">Due Date:</h3>
+            <p class="text-lg text-red-500">[01/10/2025]</p>
+          </div>
+
+          <form
+            action=""
+            method="get"
+            enctype="multipart/form-data"
+            class="bg-[#302e2d] w-full px-8 py-4 rounded-[15px] shadow-md mt-16"
+          >
+            <h2 class="text-2xl font-semibold mb-4 text-center">
+              Submit Your Task
+            </h2>
+
+            <label for="taskFile" class="block text-lg mb-2"
+              >Upload Your Task File</label
+            >
+            <input
+              type="file"
+              id="taskFile"
+              name="taskFile"
+              class="block w-full mb-4 px-4 py-2 border border-gray-300 rounded-md"
+              required
+            />
+
+            <label for="comments" class="block text-lg mb-2"
+              >Additional Comments</label
+            >
+            <textarea
+              id="comments"
+              name="comments"
+              rows="4"
+              class="block w-full px-4 py-2 border border-gray-300 rounded-md"
+            ></textarea>
+
             <div class="flex justify-center items-center gap-6">
               <button
                 type="submit"
-                class="cursor-pointer bg-green-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-700 transition"
+                class="w-32 mt-4 cursor-pointer bg-green-500 px-4 py-2 rounded-lg shadow-md hover:bg-green-700 hover:text-[#e6ccd6] transition duration-300"
               >
-                Guardar
+                Submit
               </button>
               <button
                 type="reset"
-                class="cursor-pointer bg-gray-400 text-white px-4 py-2 rounded-lg shadow-md hover:bg-gray-700 transition"
+                class="w-32 mt-4 cursor-pointer bg-gray-400 px-4 py-2 rounded-lg shadow-md hover:bg-gray-700 hover:text-[#e6ccd6] transition duration-300"
               >
-                Cancelar
+                Cancel
               </button>
             </div>
           </form>
@@ -81,7 +179,7 @@
         </div>
         <div>
           <a href="./help.html">
-            <p>Ayuda</p>
+            <p>Help</p>
           </a>
         </div>
         <div>

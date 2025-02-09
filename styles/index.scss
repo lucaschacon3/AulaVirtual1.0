@@ -2,8 +2,11 @@
 $colors: (
   "background": rgba(0, 0, 0, 0.65),
   "background2": #2d3748,
+  "background3": #302e2d,
   "text": #fff,
   "text-hover": #e6ccd6,
+  "heading-1": #f8e71c,
+  "heading-2": #a35aff,
   "delimiter-1": #ff007f,
   "button-primary": #ff007f,
   "button-primary-hover": #99004d,
@@ -38,11 +41,11 @@ body {
   color: map-get($map: $colors, $key: "text");
 
   h1 {
-    color: #f8e71c;
+    color: map-get($map: $colors, $key: "heading-1");
   }
 
   h2 {
-    color: #a35aff;
+    color: map-get($map: $colors, $key: "heading-2");
   }
 
   h3 {
@@ -130,7 +133,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 639px) {
   #close-sesion {
     text-align: center;
   }

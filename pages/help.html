@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ayuda</title>
+    <title>Help</title>
     <link rel="stylesheet" href="../styles/index.css" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
@@ -25,7 +25,7 @@
               src="../img/user_profile_icon.png"
               alt="user profile icon"
           /></a>
-          <a id="close-sesion" href="../index.html">Cerrar sesión</a>
+          <a id="close-sesion" href="../index.html">Log out</a>
         </div>
       </div>
 
@@ -33,81 +33,117 @@
 
       <!-- Main content -->
       <div id="main">
-        <h1 class="text-4xl my-4 text-center">
-          Ayuda - Cómo usar el Aula virtual
-        </h1>
+        <div class="flex justify-between items-center -mt-4">
+          <!-- Lo ideal sería volver a la página desde la que se entró, pero eso hay que hacerlo con JS -->
+          <a
+            href="./home.html"
+            class="bg-[#30E3CA] p-3 rounded-lg text-lg font-semibold hover:bg-[#28b7a3] hover:text-[#e6ccd6] transition duration-300"
+          >
+            Go Back
+          </a>
+          <h1 class="text-4xl my-4 text-center flex-1 mr-[90.44px]">
+            Help - How to use the Virtual Classroom
+          </h1>
+        </div>
+
         <div
-          class="bg-[#2d3748] text-white rounded-[15px] flex justify-center items-center p-8"
+          class="bg-[#2d3748] rounded-[15px] flex justify-center items-center p-8"
         >
           <div>
-            <h2 class="text-2xl mb-4">
-              Ayuda y Guía para Usar el Aula Virtual
-            </h2>
+            <div class="flex items-center justify-between mb-4">
+              <h2 class="text-2xl">
+                Help and Guidance for Using the Virtual Classroom
+              </h2>
+
+              <div
+                class="flex justify-center items-center gap-2 p-2 border rounded-[15px] min-w-[74px]"
+              >
+                <button
+                  onclick="gestionarAudio('audioHelp', 'play')"
+                  class="cursor-pointer"
+                  aria-label="Audio player: linear algebra"
+                >
+                  <img src="../icons/audio_icon.svg" alt="audio icon" />
+                </button>
+                <button
+                  onclick="gestionarAudio('audioHelp', 'pause')"
+                  class="cursor-pointer"
+                  aria-label="Audio player: linear algebra"
+                >
+                  <img src="../icons/pause_icon.svg" alt="audio icon" />
+                </button>
+                <audio id="audioHelp">
+                  <source src="../audio/help.mp3" type="audio/mpeg" />
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
 
             <p class="mb-4">
-              Bienvenido/a al Aula Virtual. Esta plataforma está diseñada para
-              ofrecerte una experiencia de aprendizaje intuitiva y accesible. A
-              continuación, te damos una guía rápida para que puedas aprovechar
-              al máximo todas sus funciones:
+              Welcome to the Virtual Classroom. This platform is designed to
+              offer you an intuitive and accessible learning experience. A here
+              is a quick guide to help you make the most of all its features:
             </p>
 
             <ol class="list-decimal pl-4">
               <li>
-                <h3>Inicio de Sesión y Navegación</h3>
+                <h3>Login and Navigation</h3>
                 <p class="my-2">
-                  Ingresa con tus credenciales y accede al panel principal,
-                  donde podrás visualizar tus cursos activos. Haz clic en el
-                  curso que desees explorar para entrar a su contenido.
+                  Login with your credentials and access the main panel, where
+                  you can view your active courses. Click on the course you wish
+                  to explore to access its content.
                 </p>
               </li>
               <li>
-                <h3>Materiales de Estudio y Recursos</h3>
+                <h3>Study Materials and Resources</h3>
                 <p class="my-2">
-                  Dentro de cada curso encontrarás secciones organizadas con
-                  materiales de estudio, como lecturas, videos o enlaces. Todo
-                  está pensado para facilitar tu aprendizaje.
+                  Within each course you will find organized sections with study
+                  materials, such as readings, videos or links. Everything is
+                  designed to facilitate your learning.
                 </p>
               </li>
               <li>
-                <h3>Entrega de Tareas</h3>
+                <h3>Homework Submission</h3>
                 <p class="my-2">
-                  Para enviar tus tareas, accede a la sección correspondiente,
-                  carga tu archivo desde tu dispositivo y presiona "Enviar".
-                  Verifica las instrucciones y fechas de entrega antes de subir
-                  tu trabajo.
+                  To submit your tasks, access the corresponding section, upload
+                  your file from your device and press “Submit”. Check the
+                  instructions and deadlines before uploading your work. your
+                  work.
                 </p>
               </li>
               <li>
-                <h3>Foros de Discusión y Mensajería</h3>
+                <h3>Discussion Forums and Messaging</h3>
                 <p class="my-2">
-                  Si tienes dudas o deseas debatir un tema, utiliza los foros de
-                  discusión. También puedes comunicarte directamente con tu
-                  profesor/a o compañeros/as a través del sistema de mensajería
-                  privada.
+                  If you have questions or wish to discuss a topic, use the
+                  discussion forums. forums. You can also communicate directly
+                  with your teacher or classmates through the private messaging
+                  system. messaging system.
                 </p>
               </li>
               <li>
-                <h3>Calificaciones y Retroalimentación</h3>
+                <h3>Qualifications and Feedback</h3>
                 <p class="my-2">
-                  Consulta tus resultados en la pestaña "Calificaciones", donde
-                  también podrás ver los comentarios y la retroalimentación de
-                  tus profesores para mejorar en tus próximas actividades.
+                  Check your results in the “Grades” tab, where you can also see
+                  the comments and feedback you can also see comments and
+                  feedback from your teachers to improve your teachers to
+                  improve your next activities.
                 </p>
               </li>
               <li>
-                <h3>Notificaciones y Anuncios</h3>
+                <h3>Notifications and Announcements</h3>
                 <p class="my-2">
-                  Activa las notificaciones para mantenerte informado sobre
-                  anuncios importantes, fechas de entrega y cualquier cambio en
-                  tus cursos.
+                  Activate notifications to keep you informed about important
+                  announcements important announcements, deadlines and any
+                  changes to your courses. your courses.
                 </p>
               </li>
             </ol>
 
             <p class="mt-4">
-              Recuerda explorar todas las herramientas y funciones que el aula
-              virtual te ofrece para mejorar tu experiencia de aprendizaje.
-              ¡Aprovecha esta plataforma al máximo y disfruta del proceso!
+              Remember to explore all the tools and functions that the virtual
+              classroom offers to virtual classroom offers you to enhance your
+              learning experience. Make the most of this platform and enjoy the
+              process!
             </p>
           </div>
         </div>
@@ -123,7 +159,7 @@
         </div>
         <div>
           <a href="./help.html">
-            <p>Ayuda</p>
+            <p>Help</p>
           </a>
         </div>
         <div>
@@ -131,5 +167,20 @@
         </div>
       </div>
     </div>
+
+    <script>
+      function gestionarAudio(id, accion) {
+        let audio = document.getElementById(id);
+
+        switch (accion) {
+          case "play":
+            audio.play();
+            break;
+          case "pause":
+            audio.pause();
+            break;
+        }
+      }
+    </script>
   </body>
 </html>
