@@ -1,7 +1,8 @@
 # Documentación Técnica - Aula Virtual
 https://markdown.es/
 ## Portada
-![Portada del proyecto]()
+![Portada del proyecto](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fes%2Ffotos%2F%25C3%25A1lgebra&psig=AOvVaw3CSNBwaZcHTc7IDolj47X0&ust=1739526822763000&source=images&opi=89978449)
+
 **Título del Proyecto:** Aula Virtual con Tailwind CSS  
 **Integrantes del Equipo:**  
 - Lucas Chacón - Rol diseñador y programador 
@@ -23,18 +24,35 @@ https://markdown.es/
 
 ## Introducción
 ### Descripción del aula virtual
-El proyecto consiste en el desarrollo de una plataforma de aula virtual enfocada en brindar una experiencia interactiva y accesible para los usuarios. Se implementó utilizando Tailwind CSS para un diseño moderno y eficiente.
+El proyecto de Aula Virtual es una aplicación web realizada con Tailwind CSS, un framework que ayuda a crear interfaces de usuario de manera rápida y eficiente mediante el uso de clases predefinidas. Este framework permite diseñar componentes visuales de forma flexible y personalizable sin necesidad de escribir mucho código CSS desde cero. 
+
+La aplicación está orientada a facilitar la interacción de los estudiantes con el aula, proporcionando un entorno digital donde se pueden compartir materiales educativos, realizar evaluaciones, y mantener un seguimiento constante del curso. Además, se ha implementado una estructura de navegación intuitiva, accesible desde diferentes dispositivos, para asegurar que los usuarios tengan una experiencia cómoda y funcional. 
+
+Entre las principales características de este Aula Virtual se encuentran la gestión de tareas, la visualización de notas, un calendario, seguimiento activo del curso y el acceso a contenidos multimedia siendo inclusivo para personas con visión reducida. El uso de Tailwind CSS garantiza un diseño limpio, moderno y completamente responsive, adaptándose a cualquier tamaño de pantalla para una mejor usabilidad en móviles, tablets y formato escritorio.
+
+El aula virtual trata sobre 
 
 ### Objetivos del Proyecto
-- Desarrollar una plataforma fácil de usar para la gestión de cursos en línea.
-- Implementar un diseño responsivo y accesible.
-- Optimizar el rendimiento y la carga de recursos multimedia.
+
+- Desarrollar una plataforma fácil de usar para la gestión de cursos.
+- Implementar un diseño responsive y accesible para todos los dispositivos.
+- Facilitar la interacción de estudiantes con el aula.
+- Integrar un sistema de gestión de tareas y exámenes con retroalimentación automática.
+- Proporcionar una interfaz intuitiva para la navegación y visualización de contenidos educativos.
+- Incorporar funcionalidades de seguimiento de progreso de los estudiantes a través de gráficos y estadísticas.
+- Facilitar la creación y gestión de materiales educativos, como presentaciones, documentos y videos.
+- Asegurar la compatibilidad con diferentes navegadores web y dispositivos móviles.
+- Implementar una sección de ayuda con soporte técnico para asistir a los usuarios..- Fomentar la participación de los usuarios mediante el uso de gamificación y recompensas por logros educativos.
+- Asegurar la actualización continua de la plataforma, adaptándose a nuevas tecnologías y necesidades educativas.
 
 ### Alcance del desarrollo en esta etapa
 La primera versión del aula virtual incluye:
-- Página de inicio con información sobre cursos.
 - Registro e inicio de sesión de usuarios.
-- Sección de materiales didácticos y multimedia.
+- Página de inicio con una breve introducción sobre los cursos.
+- Página de la asignatura de Álgebra con un índice de los contenidos de cada sección.
+- Tres secciones de materiales didácticos y multimedia.
+- Formulario de entrega de tareas.
+- Página de usuario donde ver sus tareas y notas de las asignaturas.
 
 ---
 
