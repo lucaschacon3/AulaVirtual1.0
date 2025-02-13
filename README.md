@@ -30,7 +30,7 @@ La aplicación está orientada a facilitar la interacción de los estudiantes co
 
 Entre las principales características de este Aula Virtual se encuentran la gestión de tareas, la visualización de notas, un calendario, seguimiento activo del curso y el acceso a contenidos multimedia siendo inclusivo para personas con visión reducida. El uso de Tailwind CSS garantiza un diseño limpio, moderno y completamente responsive, adaptándose a cualquier tamaño de pantalla para una mejor usabilidad en móviles, tablets y formato escritorio.
 
-El aula virtual trata sobre 
+El aula virtual trata sobre diferentes asignatur
 
 ### Objetivos del Proyecto
 
