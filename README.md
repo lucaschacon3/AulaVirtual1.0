@@ -62,10 +62,10 @@ La primera versión del aula virtual incluye:
 ```
 Estructura del Proyecto
 ├── audio
-│   ├── ✪ abstract_algebra.mp3
-│   ├── ✪ elemental_algebra.mp3
+│   ├──  abstract_algebra.mp3
+│   ├── elemental_algebra.mp3
 │   ├── help.mp3
-│   └── ✪ linear_algebra.mp3
+│   └── linear_algebra.mp3
 ├── icons
 │   ├── audio_icon.svg
 │   ├── aulavirtual_icon.svg
@@ -82,7 +82,10 @@ Estructura del Proyecto
 │   ├── pdf_icon.png
 │   ├── solving-linear-systems.jpg
 │   ├── solving-linear-systems.png
-│   └── summarizes-the-axioms-that-define-groups-rings-and-field.png
+│    ├── summarizes-the-axioms-that-define-groups-rings-and-field.png
+│    ├── task_icon.png
+│    ├── user_profile_icon.png
+│   └── user.png
 ├── pages
 │   ├── abstract_algebra.html
 │   ├── elemental_algebra.html
@@ -109,11 +112,7 @@ Estructura del Proyecto
 
 ### Dependencias utilizadas
 
-- **Tailwind CSS**: Framework CSS para estilos rápidos y personalizados, permitiendo una maquetación flexible y eficiente mediante clases utilitarias.
-- **HTML**: Lenguaje de marcado utilizado para estructurar el contenido de la página web.
-- **CSS**: Lenguaje de estilo utilizado para diseñar y dar formato a la estructura HTML.
-- **JavaScript Vanilla**: Lenguaje de programación utilizado para los desplegables y botones de audio.
-- **SASS**: Preprocesador CSS que permite escribir estilos más organizados y reutilizables mediante características como variables, anidamiento y mixins, mejorando la mantenibilidad del código.
+
 
 ---
 
@@ -127,10 +126,14 @@ Se usó Tailwind CSS para replicar el diseño de Figma, permitiendo una implemen
 ---
 
 ## Tecnologías Utilizadas
-- **HTML5**: Para la estructura del contenido.
-- **CSS (Sass)**: Para el diseño y personalización adicional.
 - **Tailwind CSS**: Framework de utilidades para estilos rápidos y flexibles.
 - **JavaScript**: Para interactividad y dinámica en la plataforma.
+
+- **Tailwind CSS**: Framework CSS para estilos rápidos y personalizados, permitiendo una maquetación flexible y eficiente mediante clases utilitarias.
+- **HTML**: Lenguaje de marcado utilizado para estructurar el contenido de la página web.
+- **CSS**: Lenguaje de estilo utilizado para diseñar y dar formato a la estructura HTML.
+- **JavaScript Vanilla**: Lenguaje de programación utilizado para los desplegables y botones de audio.
+- **SASS**: Preprocesador CSS que permite escribir estilos más organizados y reutilizables mediante características como variables, anidamiento y mixins, mejorando la mantenibilidad del código.
 
 ---
 
