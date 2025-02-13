@@ -1,12 +1,12 @@
 # Documentación Técnica - Aula Virtual
-
+https://markdown.es/
 ## Portada
+![Portada del proyecto]()
 **Título del Proyecto:** Aula Virtual con Tailwind CSS  
 **Integrantes del Equipo:**  
-- Nombre 1 - Rol  
-- Nombre 2 - Rol  
-- Nombre 3 - Rol  
-**Fecha de Entrega:** DD/MM/AAAA
+- Lucas Chacón - Rol diseñador y programador 
+- Lucas Sánchez - Rol diseñador y programador
+**Fecha de Entrega:** 16/02/2025
 
 ---
 
@@ -22,7 +22,7 @@
 ---
 
 ## Introducción
-### Descripción breve del aula virtual
+### Descripción del aula virtual
 El proyecto consiste en el desarrollo de una plataforma de aula virtual enfocada en brindar una experiencia interactiva y accesible para los usuarios. Se implementó utilizando Tailwind CSS para un diseño moderno y eficiente.
 
 ### Objetivos del Proyecto
@@ -55,6 +55,8 @@ La primera versión del aula virtual incluye:
 │── package.json
 │── tailwind.config.js
 ```
+
+![alt text](image.png)
 
 ### Dependencias utilizadas
 - **Tailwind CSS**: Framework CSS para estilos rápidos y personalizados.
