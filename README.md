@@ -109,11 +109,11 @@ Estructura del Proyecto
 ```
 
 ### Dependencias utilizadas
-
-
+- **iframes**: para los vídeos incrustados en las secciones.
 
 ---
 
+Falta esta parte
 ## Diseño del Proyecto
 ### Descripción del diseño inicial en Figma
 Se crearon prototipos en Figma para definir la estructura visual, con especial énfasis en la usabilidad y navegación intuitiva.
@@ -124,9 +124,6 @@ Se usó Tailwind CSS para replicar el diseño de Figma, permitiendo una implemen
 ---
 
 ## Tecnologías Utilizadas
-- **Tailwind CSS**: Framework de utilidades para estilos rápidos y flexibles.
-- **JavaScript**: Para interactividad y dinámica en la plataforma.
-
 - **Tailwind CSS**: Framework CSS para estilos rápidos y personalizados, permitiendo una maquetación flexible y eficiente mediante clases utilitarias.
 - **HTML**: Lenguaje de marcado utilizado para estructurar el contenido de la página web.
 - **CSS**: Lenguaje de estilo utilizado para diseñar y dar formato a la estructura HTML.
