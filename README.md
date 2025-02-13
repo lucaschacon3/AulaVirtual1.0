@@ -30,7 +30,7 @@ La aplicación está orientada a facilitar la interacción de los estudiantes co
 
 Entre las principales características de este Aula Virtual se encuentran la gestión de tareas, la visualización de notas, un calendario, seguimiento activo del curso y el acceso a contenidos multimedia siendo inclusivo para personas con visión reducida. El uso de Tailwind CSS garantiza un diseño limpio, moderno y completamente responsive, adaptándose a cualquier tamaño de pantalla para una mejor usabilidad en móviles, tablets y formato escritorio.
 
-El aula virtual trata sobre diferentes asignatur
+El aula virtual trata sobre diferentes asignaturas de matemáticas y nos vamos a enfocar en la de Álgebra.
 
 ### Objetivos del Proyecto
 
@@ -53,33 +53,67 @@ La primera versión del aula virtual incluye:
 - Tres secciones de materiales didácticos y multimedia.
 - Formulario de entrega de tareas.
 - Página de usuario donde ver sus tareas y notas de las asignaturas.
+- Página de ayuda para saber cómo funciona el aula virtual
 
 ---
 
 ## Arquitectura del Proyecto
 ### Estructura de carpetas y archivos
 ```
-/aula-virtual
-│── /public
-│   │── index.html
-│   │── /assets
-│       │── logo.png
-│── /src
-│   │── /components
-│   │── /styles
-│   │── main.css
-│   │── app.js
-│── /config
-│── package.json
-│── tailwind.config.js
+Estructura del Proyecto
+├── audio
+│   ├── ✪ abstract_algebra.mp3
+│   ├── ✪ elemental_algebra.mp3
+│   ├── help.mp3
+│   └── ✪ linear_algebra.mp3
+├── icons
+│   ├── audio_icon.svg
+│   ├── aulavirtual_icon.svg
+│   ├── logo.svg
+│   └── pause_icon.svg
+├── img
+│   ├── background.png
+│   ├── fondo2.png
+│   ├── forms-equation-of-line.png
+│   ├── forms-equation-quadratic.png
+│   ├── Group-Action.png
+│   ├── icons8-pausa-24.png
+│   ├── linear-transformations.jpg
+│   ├── pdf_icon.png
+│   ├── solving-linear-systems.jpg
+│   ├── solving-linear-systems.png
+│   └── summarizes-the-axioms-that-define-groups-rings-and-field.png
+├── pages
+│   ├── abstract_algebra.html
+│   ├── elemental_algebra.html
+│   ├── help.html
+│   ├── home.html
+│   ├── linear_algebra.html
+│   ├── subject.html
+│   ├── submit_task.html
+│   └── user.html
+├── resources
+│   ├── abstract_algebra.pdf
+│   ├── elemental_algebra.pdf
+│   └── linear_algebra.pdf
+├── styles
+│   ├── index.css
+│   ├── index.css.map
+│   └── index.scss
+├── NOTAS.txt
+└── README.md
+
 ```
 
-![alt text](image.png)
+![alt text](/img/docs/image.png)
 
 ### Dependencias utilizadas
-- **Tailwind CSS**: Framework CSS para estilos rápidos y personalizados.
-- **DaisyUI**: Extensión de componentes para Tailwind.
-- **Vite**: Herramienta de desarrollo rápida.
+
+- **Tailwind CSS**: Framework CSS para estilos rápidos y personalizados, permitiendo una maquetación flexible y eficiente mediante clases utilitarias.
+- **HTML**: Lenguaje de marcado utilizado para estructurar el contenido de la página web.
+- **CSS**: Lenguaje de estilo utilizado para diseñar y dar formato a la estructura HTML.
+- **JavaScript Vanilla**: Lenguaje de programación utilizado para los desplegables y botones de audio.
+- **SASS**: Preprocesador CSS que permite escribir estilos más organizados y reutilizables mediante características como variables, anidamiento y mixins, mejorando la mantenibilidad del código.
 
 ---
 
