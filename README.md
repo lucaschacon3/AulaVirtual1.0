@@ -1,7 +1,7 @@
 # Documentación Técnica - Aula Virtual
 https://markdown.es/
 ## Portada
-![Portada del proyecto](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fes%2Ffotos%2F%25C3%25A1lgebra&psig=AOvVaw3CSNBwaZcHTc7IDolj47X0&ust=1739526822763000&source=images&opi=89978449)
+![Portada del proyecto](portada.jpg)
 
 **Título del Proyecto:** Aula Virtual con Tailwind CSS  
 **Integrantes del Equipo:**  
