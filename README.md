@@ -108,8 +108,6 @@ Estructura del Proyecto
 
 ```
 
-![alt text](/img/docs/image.png)
-
 ### Dependencias utilizadas
 
 
