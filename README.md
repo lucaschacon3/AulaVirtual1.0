@@ -1,13 +1,12 @@
 # Documentación Técnica - Aula Virtual
-https://markdown.es/
-## Portada
+
 ![Portada del proyecto](portada.jpg)
 
-**Título del Proyecto:** Aula Virtual con Tailwind CSS  
-**Integrantes del Equipo:**  
+**Título del Proyecto**: Aula Virtual con Tailwind CSS  
+**Integrantes del Equipo**:  
 - Lucas Chacón - Rol diseñador y programador 
 - Lucas Sánchez - Rol diseñador y programador
-**Fecha de Entrega:** 16/02/2025
+**Fecha de Entrega**: 16/02/2025
 
 ---
 
@@ -82,9 +81,9 @@ Estructura del Proyecto
 │   ├── pdf_icon.png
 │   ├── solving-linear-systems.jpg
 │   ├── solving-linear-systems.png
-│    ├── summarizes-the-axioms-that-define-groups-rings-and-field.png
-│    ├── task_icon.png
-│    ├── user_profile_icon.png
+│   ├── summarizes-the-axioms-that-define-groups-rings-and-field.png
+│   ├── task_icon.png
+│   ├── user_profile_icon.png
 │   └── user.png
 ├── pages
 │   ├── abstract_algebra.html
@@ -103,18 +102,90 @@ Estructura del Proyecto
 │   ├── index.css
 │   ├── index.css.map
 │   └── index.scss
+├── portada.jpg
 ├── NOTAS.txt
 └── README.md
-
 ```
 
+`¿ASÍ BASTA? --> Listado iframes`
 ### Dependencias utilizadas
 - **iframes**: para los vídeos incrustados en las secciones.
+  - *What is Algebra | Don't Memorise* (elemental_algebra.html)
+    ```
+    <iframe
+      class="w-full h-full"
+      src="https://www.youtube.com/embed/5Q0FlxcEEIw?si=W6wMG-oGpyfx41Ur"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    ```
+  - *Algebra Basics: What Are Polynomials? - Math Antics* (elemental_algebra.html)
+    ```
+    <iframe
+      class="w-full h-full"
+      src="https://www.youtube.com/embed/ffLLmV4mZwU?si=YjadaFkDsb2wGLI7"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    ```
+  - *Understanding Vector Spaces* (linear_algebra.html)
+    ```
+    <iframe
+      class="w-full h-full"
+      src="https://www.youtube.com/embed/EP2ghkO0lSk?si=Wb5Q2YnJr0bHk-OZ"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    ```
+  - *Finding Eigenvalues and Eigenvectors* (linear_algebra.html)
+    ```
+    <iframe
+      class="w-full h-full"
+      src="https://www.youtube.com/embed/TQvxWaQnrqI?si=TQrPDy7LJK0LayU5"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    ```
+  - *Groups and subgroups* (abstract_algebra.html)
+    ```
+    <iframe
+      class="w-full h-full"
+      src="https://www.youtube.com/embed/ptRmr8LFfc4?si=30gvyjPZ2_pxUmGJ"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    ```
+  - *Group homomorphisms and isomorphisms* (abstract_algebra.html)
+    ```
+    <iframe
+      class="w-full h-full"
+      src="https://www.youtube.com/embed/lbCQgzHdx1Q?si=-LWp9AGTBsjIJRqT"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    ```
 
 ---
 
-Falta esta parte
-## Diseño del Proyecto
+## Diseño del Proyecto `FALTA`
 ### Descripción del diseño inicial en Figma
 Se crearon prototipos en Figma para definir la estructura visual, con especial énfasis en la usabilidad y navegación intuitiva.
 
@@ -134,42 +205,38 @@ Se usó Tailwind CSS para replicar el diseño de Figma, permitiendo una implemen
 
 ## Integración de Contenido Multimedia
 ### Tipos de contenido multimedia incluidos
-- Imágenes en formatos optimizados (WebP, PNG, JPG).
-- Videos incrustados desde plataformas como YouTube y Vimeo.
-- Documentos PDF y archivos descargables.
+- Imágenes en formatos optimizados (PNG, JPG).
+- Iconos en formato SVG.
+- Videos incrustados desde YouTube como iframes.
+- Audios en formato mp3.
+- Archivos descargables en formato PDF.
 
-### Gestión y optimización de estos recursos
-- Uso de lazy loading para mejorar el rendimiento.
-- Compresión de imágenes sin perder calidad.
-- Carga diferida de videos para evitar bloqueos en la navegación.
+### Gestión y optimización de estos recursos `FALTA`
+- **Reutilización de código**: 
+- Las img svg tienen pesan menos
 
 ---
 
 ## Responsividad y Accesibilidad
-### Adaptación del diseño a dispositivos móviles y escritorio
+### Adaptación del diseño a dispositivos móviles y escritorio `REVISAR`
 - Uso de clases de Tailwind para diseño adaptable (flex, grid, media queries).
 - Optimización para diferentes resoluciones y tamaños de pantalla.
 
 ### Medidas de accesibilidad aplicadas
 - Uso de etiquetas semánticas en HTML.
 - Contrastes adecuados en colores y tipografía.
-- Compatibilidad con lectores de pantalla.
+- Audios para la gente que no pueda leer la página.
 
 ---
 
 ## Desafíos y Soluciones
 ### Problemas encontrados durante el desarrollo y soluciones
-- **Problema:** Dificultades con la configuración inicial de Tailwind.  
-  **Solución:** Se revisó la documentación y se ajustó la configuración en `tailwind.config.js`.
-
-- **Problema:** Carga lenta de contenido multimedia.  
-  **Solución:** Se implementó lazy loading y optimización de archivos.
-
-- **Problema:** Adaptabilidad a diferentes dispositivos.  
-  **Solución:** Se usaron clases responsivas de Tailwind y pruebas en distintos tamaños de pantalla.
+- **Problema**: Al principio estábamos usando dos versiones de Tailwind distintas, uno la v3.4.17 y otro la v4.0. Esto causó que al intentar aplicar algunos estilos en el CSS se vieran en las páginas con la última versión, mientras que en las que tenían la versión anterior no se veían.
+  - **Solución**: La solución fue muy sencilla, en los archivos con versión más antigua los cambiamos para que tuvieran la v4.0 en vez de la v3.4.17.
 
 ---
 
+`FALTA`
 ## Conclusión
 El desarrollo del aula virtual con Tailwind CSS ha permitido construir una plataforma moderna, optimizada y accesible. Se lograron implementar buenas prácticas de desarrollo y diseño, garantizando una experiencia de usuario intuitiva y eficiente.
 

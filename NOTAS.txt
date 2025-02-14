@@ -29,3 +29,8 @@ https://www.xataka.com/basics/iconos-svg-que-mejores-11-paginas-para-descargarlo
 GENERADOR DE AUDIO
 https://ttsmaker.com/es
 https://speechgen.io
+
+
+
+DOCS MARKDOWN EN ESPAÑOL
+https://markdown.es/
