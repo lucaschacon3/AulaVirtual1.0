@@ -199,9 +199,11 @@ Estructura del Proyecto
 
 ---
 
-## Diseño del Proyecto `FALTA`
+## Diseño del Proyecto
 
-Descripción del diseño inicial en Figma
+`FALTA`
+
+Descripción del diseño inicial en Figma:
 El diseño inicial del aula virtual fue creado utilizando Figma, con el objetivo de establecer una estructura visual coherente y funcional para el usuario. Sin embargo, el diseño anterior presentaba varios problemas en cuanto a estética y usabilidad. El fondo era excesivamente cargado, lo que dificultaba la lectura y distría al usuario. La paleta de colores estaba basada principalmente en tonos rojos, lo que generaba una sensación de sobrecarga visual. Además, los botones eran obsoletos y poco amigables, mientras que la estética general del diseño se asemejaba más a una presentación de PowerPoint que a una interfaz web profesional.
 
 Con el fin de mejorar la experiencia del usuario, se rediseñó por completo el aula virtual, destacando los siguientes aspectos:
