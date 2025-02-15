@@ -3,29 +3,33 @@
 ![Portada del proyecto](portada.jpg)
 
 **Título del Proyecto**: Aula Virtual con Tailwind CSS  
-**Integrantes del Equipo**:  
-- Lucas Chacón - Rol diseñador y programador 
+**Integrantes del Equipo**:
+
+- Lucas Chacón - Rol diseñador y programador
 - Lucas Sánchez - Rol diseñador y programador
-**Fecha de Entrega**: 16/02/2025
+  **Fecha de Entrega**: 16/02/2025
 
 ---
 
 ## Índice
-1. Introducción  
-2. Arquitectura del Proyecto  
-3. Diseño del Proyecto  
-4. Tecnologías Utilizadas  
-5. Integración de Contenido Multimedia  
-6. Responsividad y Accesibilidad  
-7. Desafíos y Soluciones  
+
+1. Introducción
+2. Arquitectura del Proyecto
+3. Diseño del Proyecto
+4. Tecnologías Utilizadas
+5. Integración de Contenido Multimedia
+6. Responsividad y Accesibilidad
+7. Desafíos y Soluciones
 
 ---
 
 ## Introducción
-### Descripción del aula virtual
-El proyecto de Aula Virtual es una aplicación web realizada con Tailwind CSS, un framework que ayuda a crear interfaces de usuario de manera rápida y eficiente mediante el uso de clases predefinidas. Este framework permite diseñar componentes visuales de forma flexible y personalizable sin necesidad de escribir mucho código CSS desde cero. 
 
-La aplicación está orientada a facilitar la interacción de los estudiantes con el aula, proporcionando un entorno digital donde se pueden compartir materiales educativos, realizar evaluaciones, y mantener un seguimiento constante del curso. Además, se ha implementado una estructura de navegación intuitiva, accesible desde diferentes dispositivos, para asegurar que los usuarios tengan una experiencia cómoda y funcional. 
+### Descripción del aula virtual
+
+El proyecto de Aula Virtual es una aplicación web realizada con Tailwind CSS, un framework que ayuda a crear interfaces de usuario de manera rápida y eficiente mediante el uso de clases predefinidas. Este framework permite diseñar componentes visuales de forma flexible y personalizable sin necesidad de escribir mucho código CSS desde cero.
+
+La aplicación está orientada a facilitar la interacción de los estudiantes con el aula, proporcionando un entorno digital donde se pueden compartir materiales educativos, realizar evaluaciones, y mantener un seguimiento constante del curso. Además, se ha implementado una estructura de navegación intuitiva, accesible desde diferentes dispositivos, para asegurar que los usuarios tengan una experiencia cómoda y funcional.
 
 Entre las principales características de este Aula Virtual se encuentran la gestión de tareas, la visualización de notas, un calendario, seguimiento activo del curso y el acceso a contenidos multimedia siendo inclusivo para personas con visión reducida. El uso de Tailwind CSS garantiza un diseño limpio, moderno y completamente responsive, adaptándose a cualquier tamaño de pantalla para una mejor usabilidad en móviles, tablets y formato escritorio.
 
@@ -45,7 +49,9 @@ El aula virtual trata sobre diferentes asignaturas de matemáticas y nos vamos a
 - Asegurar la actualización continua de la plataforma, adaptándose a nuevas tecnologías y necesidades educativas.
 
 ### Alcance del desarrollo en esta etapa
+
 La primera versión del aula virtual incluye:
+
 - Registro e inicio de sesión de usuarios.
 - Página de inicio con una breve introducción sobre los cursos.
 - Página de la asignatura de Álgebra con un índice de los contenidos de cada sección.
@@ -57,7 +63,9 @@ La primera versión del aula virtual incluye:
 ---
 
 ## Arquitectura del Proyecto
+
 ### Estructura de carpetas y archivos
+
 ```
 Estructura del Proyecto
 ├── audio
@@ -108,9 +116,11 @@ Estructura del Proyecto
 ```
 
 `¿ASÍ BASTA? --> Listado iframes`
+
 ### Dependencias utilizadas
+
 - **iframes**: para los vídeos incrustados en las secciones.
-  - *What is Algebra | Don't Memorise* (elemental_algebra.html)
+  - _What is Algebra | Don't Memorise_ (elemental_algebra.html)
     ```
     <iframe
       class="w-full h-full"
@@ -122,7 +132,7 @@ Estructura del Proyecto
       allowfullscreen
     ></iframe>
     ```
-  - *Algebra Basics: What Are Polynomials? - Math Antics* (elemental_algebra.html)
+  - _Algebra Basics: What Are Polynomials? - Math Antics_ (elemental_algebra.html)
     ```
     <iframe
       class="w-full h-full"
@@ -134,7 +144,7 @@ Estructura del Proyecto
       allowfullscreen
     ></iframe>
     ```
-  - *Understanding Vector Spaces* (linear_algebra.html)
+  - _Understanding Vector Spaces_ (linear_algebra.html)
     ```
     <iframe
       class="w-full h-full"
@@ -146,7 +156,7 @@ Estructura del Proyecto
       allowfullscreen
     ></iframe>
     ```
-  - *Finding Eigenvalues and Eigenvectors* (linear_algebra.html)
+  - _Finding Eigenvalues and Eigenvectors_ (linear_algebra.html)
     ```
     <iframe
       class="w-full h-full"
@@ -158,7 +168,7 @@ Estructura del Proyecto
       allowfullscreen
     ></iframe>
     ```
-  - *Groups and subgroups* (abstract_algebra.html)
+  - _Groups and subgroups_ (abstract_algebra.html)
     ```
     <iframe
       class="w-full h-full"
@@ -170,7 +180,7 @@ Estructura del Proyecto
       allowfullscreen
     ></iframe>
     ```
-  - *Group homomorphisms and isomorphisms* (abstract_algebra.html)
+  - _Group homomorphisms and isomorphisms_ (abstract_algebra.html)
     ```
     <iframe
       class="w-full h-full"
@@ -186,15 +196,29 @@ Estructura del Proyecto
 ---
 
 ## Diseño del Proyecto `FALTA`
-### Descripción del diseño inicial en Figma
-Se crearon prototipos en Figma para definir la estructura visual, con especial énfasis en la usabilidad y navegación intuitiva.
 
-### Traducción del diseño al código
-Se usó Tailwind CSS para replicar el diseño de Figma, permitiendo una implementación eficiente con clases reutilizables.
+Descripción del diseño inicial en Figma
+El diseño inicial del aula virtual fue creado utilizando Figma, con el objetivo de establecer una estructura visual coherente y funcional para el usuario. Sin embargo, el diseño anterior presentaba varios problemas en cuanto a estética y usabilidad. El fondo era excesivamente cargado, lo que dificultaba la lectura y distría al usuario. La paleta de colores estaba basada principalmente en tonos rojos, lo que generaba una sensación de sobrecarga visual. Además, los botones eran obsoletos y poco amigables, mientras que la estética general del diseño se asemejaba más a una presentación de PowerPoint que a una interfaz web profesional.
+
+Con el fin de mejorar la experiencia del usuario, se rediseñó por completo el aula virtual, destacando los siguientes aspectos:
+
+Nuevos colores: Se adoptó una paleta de colores más moderna y atractiva, centrada en tonos de cian y púrpura, con toques de amarillo para crear contraste. Esto no solo mejora la estética, sino que también facilita la distinción de elementos clave de la interfaz.
+
+Simplificación visual: Se redujo la complejidad de los fondos y se optó por un diseño más limpio, manteniendo el enfoque en el contenido sin distracciones innecesarias.
+
+Botones modernos y funcionales: Se rediseñaron los botones para hacerlos más interactivos y fáciles de usar, asegurando que se ajustaran a la nueva estética sin sacrificar la funcionalidad.
+
+Usabilidad y navegación intuitiva: El diseño final se centró en la usabilidad y la navegación intuitiva, buscando siempre facilitar la interacción con el aula virtual. Los prototipos en Figma reflejan esta orientación al usuario, priorizando la experiencia de aprendizaje.
+
+Traducción del diseño al código
+Para implementar el nuevo diseño, se utilizó Tailwind CSS, una herramienta poderosa que facilita la creación de interfaces visualmente atractivas y altamente funcionales a través de clases reutilizables. Esta elección permitió replicar de manera eficiente los prototipos diseñados en Figma, asegurando que el diseño visual se mantuviera fiel a la propuesta original.
+
+Tailwind CSS permitió una personalización rápida y una maquetación flexible, lo que facilitó la adaptación de los distintos componentes del aula virtual a diferentes tamaños de pantalla, garantizando una experiencia óptima tanto en dispositivos móviles como de escritorio.
 
 ---
 
 ## Tecnologías Utilizadas
+
 - **Tailwind CSS**: Framework CSS para estilos rápidos y personalizados, permitiendo una maquetación flexible y eficiente mediante clases utilitarias.
 - **HTML**: Lenguaje de marcado utilizado para estructurar el contenido de la página web.
 - **CSS**: Lenguaje de estilo utilizado para diseñar y dar formato a la estructura HTML.
@@ -204,7 +228,9 @@ Se usó Tailwind CSS para replicar el diseño de Figma, permitiendo una implemen
 ---
 
 ## Integración de Contenido Multimedia
+
 ### Tipos de contenido multimedia incluidos
+
 - Imágenes en formatos optimizados (PNG, JPG).
 - Iconos en formato SVG.
 - Videos incrustados desde YouTube como iframes.
@@ -212,17 +238,21 @@ Se usó Tailwind CSS para replicar el diseño de Figma, permitiendo una implemen
 - Archivos descargables en formato PDF.
 
 ### Gestión y optimización de estos recursos `FALTA`
-- **Reutilización de código**: 
+
+- **Reutilización de código**:
 - Las img svg tienen pesan menos
 
 ---
 
 ## Responsividad y Accesibilidad
+
 ### Adaptación del diseño a dispositivos móviles y escritorio `REVISAR`
+
 - Uso de clases de Tailwind para diseño adaptable (flex, grid, media queries).
 - Optimización para diferentes resoluciones y tamaños de pantalla.
 
 ### Medidas de accesibilidad aplicadas
+
 - Uso de etiquetas semánticas en HTML.
 - Contrastes adecuados en colores y tipografía.
 - Audios para la gente que no pueda leer la página.
@@ -230,13 +260,16 @@ Se usó Tailwind CSS para replicar el diseño de Figma, permitiendo una implemen
 ---
 
 ## Desafíos y Soluciones
+
 ### Problemas encontrados durante el desarrollo y soluciones
+
 - **Problema**: Al principio estábamos usando dos versiones de Tailwind distintas, uno la v3.4.17 y otro la v4.0. Esto causó que al intentar aplicar algunos estilos en el CSS se vieran en las páginas con la última versión, mientras que en las que tenían la versión anterior no se veían.
   - **Solución**: La solución fue muy sencilla, en los archivos con versión más antigua los cambiamos para que tuvieran la v4.0 en vez de la v3.4.17.
 
 ---
 
 `FALTA`
-## Conclusión
-El desarrollo del aula virtual con Tailwind CSS ha permitido construir una plataforma moderna, optimizada y accesible. Se lograron implementar buenas prácticas de desarrollo y diseño, garantizando una experiencia de usuario intuitiva y eficiente.
 
+## Conclusión
+
+El desarrollo del aula virtual con Tailwind CSS ha permitido construir una plataforma moderna, optimizada y accesible. Se lograron implementar buenas prácticas de desarrollo y diseño, garantizando una experiencia de usuario intuitiva y eficiente.
