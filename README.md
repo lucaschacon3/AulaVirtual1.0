@@ -221,14 +221,77 @@ Para implementar el nuevo diseño, se utilizó Tailwind CSS, una herramienta pod
 
 Tailwind CSS permitió una personalización rápida y una maquetación flexible, lo que facilitó la adaptación de los distintos componentes del aula virtual a diferentes tamaños de pantalla, garantizando una experiencia óptima tanto en dispositivos móviles como de escritorio.
 
-![comparaciones](./imagenes%20Documentacion/comparation_help.png)
-![comparaciones](./imagenes%20Documentacion/comparation_home.png)
-![comparaciones](./imagenes%20Documentacion/comparation_linear_algebra.png)
+### Comparación de la Pantalla de Inicio de Sesión
 ![comparaciones](./imagenes%20Documentacion/comparation_login.png)
-![comparaciones](./imagenes%20Documentacion/comparation_subjet.png)
-![comparaciones](./imagenes%20Documentacion/comparation_submit.png)
+
+En la versión anterior de la pantalla de inicio de sesión, el diseño estaba sobrecargado con muchos elementos y colores intensos que generaban distracción. Los campos de entrada y botones no estaban bien diferenciados, lo que hacía que el usuario tuviera que buscar para encontrar lo que necesitaba. Además, la tipografía y los colores no eran lo suficientemente contrastantes, dificultando la legibilidad, especialmente para usuarios con visión reducida.
+
+En el nuevo diseño, se ha simplificado enormemente la estructura visual. Los botones de inicio de sesión son más prominentes y tienen un color distintivo (púrpura) que los hace destacar del fondo, con un contraste mejorado para asegurar que sean fáciles de identificar. El uso de una paleta de colores más suave y moderna también mejora la accesibilidad, mientras que los campos de entrada ahora están mejor alineados y tienen bordes sutiles, lo que permite una mayor claridad y comodidad al usuario.
+
+---
+
+### Comparación de la Página de Usuario
 ![comparaciones](./imagenes%20Documentacion/comparation_user.png)
+
+El diseño anterior de la página de usuario estaba lleno de elementos innecesarios que no facilitaban la navegación. El contenido estaba demasiado agrupado, lo que ocasionaba que los usuarios tuvieran que desplazarse mucho para acceder a la información importante. Los colores predominantes (rojos) creaban un ambiente visualmente denso y desordenado, lo que afectaba la experiencia del usuario.
+
+El rediseño ha mejorado significativamente la organización de los contenidos. Ahora, la información clave, como las tareas pendientes y las calificaciones, se encuentran en la parte superior de la página, con un diseño de tarjeta que destaca cada sección y facilita su navegación. Los colores cian y púrpura se usan de manera estratégica para separar visualmente cada bloque de contenido, lo que hace que la página sea más limpia y fácil de seguir. Además, se implementaron iconos claros para representar cada sección, lo que mejora la comprensión visual de la interfaz.
+
+---
+
+### Comparación de la Página de Inicio
+![comparaciones](./imagenes%20Documentacion/comparation_home.png)
+
+La página de inicio en el diseño anterior estaba llena de información irrelevante y un fondo sobrecargado que no contribuía a la experiencia del usuario. Esto hacía que la página fuera difícil de navegar y que el usuario se sintiera perdido entre tantas opciones y textos.
+
+En el nuevo diseño, la página de inicio se ha simplificado para enfocarse en lo esencial: la presentación de los cursos disponibles y los enlaces directos a las secciones principales. La jerarquía visual está mucho más definida, lo que permite a los usuarios encontrar rápidamente la información que necesitan. Los colores cian y púrpura proporcionan un contraste agradable y la tipografía es más moderna y legible. También se optimizó el diseño para dispositivos móviles, lo que asegura que la experiencia sea igual de fluida en pantallas más pequeñas.
+
+---
+
+### Comparación de la Página de Ayuda
+![comparaciones](./imagenes%20Documentacion/comparation_help.png)
+
+En la versión anterior, la página de ayuda estaba dispersa y no tenía una estructura clara, lo que dificultaba la navegación. La información no estaba categorizada y el diseño visual no era atractivo ni intuitivo, lo que provocaba confusión entre los usuarios.
+
+El rediseño de la página de ayuda ahora ofrece un formato más organizado y funcional. La información se ha dividido en secciones claras y bien definidas, utilizando iconos y títulos descriptivos para facilitar la búsqueda de contenido. Además, se ha mejorado el contraste de colores y se ha simplificado la tipografía, lo que permite que los usuarios lean con mayor facilidad. La navegación por la página ahora es más rápida, ya que se ha implementado un menú fijo con enlaces rápidos a las secciones más relevantes.
+
+---
+
+### Comparación de la Página de la Asignatura
+![comparaciones](./imagenes%20Documentacion/comparation_subjet.png)
+
+El diseño previo de la página de la asignatura estaba saturado con demasiados elementos visuales que competían entre sí, lo que dificultaba la navegación. Los botones y enlaces no eran fácilmente distinguibles, lo que generaba confusión sobre cómo acceder a los contenidos.
+
+En el nuevo diseño, la página de la asignatura ha sido completamente reorganizada. Los materiales y recursos ahora están claramente segmentados, y cada sección tiene su propio espacio y estilo visual, lo que mejora la jerarquía de la información. Se han utilizado tarjetas y bloques bien diferenciados para los diferentes tipos de contenido (documentos, videos, etc.), y el uso de iconos facilita la comprensión. El diseño ahora es mucho más limpio y sencillo, y la paleta de colores crea un ambiente más relajado y atractivo.
+
+---
+
+### Comparación del Despliegue de la Asignatura
 ![comparaciones](./imagenes%20Documentacion/subjet_deployment.png)
+
+El despliegue de la asignatura en el diseño anterior era confuso, con materiales dispuestos sin un orden lógico. La interfaz era poco atractiva y no favorecía la interacción con los recursos de la asignatura.
+
+En el nuevo diseño, los materiales de la asignatura están organizados de manera lógica y jerárquica, lo que facilita el acceso a los contenidos. El uso de tarjetas visualmente atractivas para cada recurso permite a los estudiantes encontrar rápidamente el material que necesitan, ya sea un video, una presentación o un archivo PDF. El diseño ahora es mucho más fluido y fácil de navegar, lo que contribuye a una experiencia más eficiente y agradable.
+
+---
+
+### Comparación de la Página de Álgebra Lineal
+![comparaciones](./imagenes%20Documentacion/comparation_linear_algebra.png)
+
+En el diseño antiguo, la página de álgebra lineal era difícil de leer y navegar debido a la falta de contraste y la sobrecarga de información. Los recursos estaban desorganizados y no eran fácilmente accesibles, lo que resultaba en una experiencia frustrante para los usuarios.
+
+Con el nuevo diseño, la página de álgebra lineal es más clara, con un contraste de colores mucho mejor, lo que hace que los contenidos sean fáciles de leer. Los videos y materiales ahora están mejor organizados, con una estructura visual coherente que facilita el acceso. Además, se ha implementado un sistema de navegación de fácil acceso para que los estudiantes puedan saltar entre secciones sin perderse.
+
+---
+
+### Comparación de la Página de Entrega de Tareas
+![comparaciones](./imagenes%20Documentacion/comparation_submit.png)
+
+En el diseño anterior, la página de entrega de tareas tenía un formato desordenado y poco claro. No se podía visualizar fácilmente el estado de las tareas ni había una retroalimentación clara sobre los plazos y resultados.
+
+El rediseño ha simplificado esta página considerablemente. Ahora, los botones de entrega son mucho más visibles y se destacan con colores atractivos, como el cian y el púrpura, lo que facilita la interacción. Además, la información sobre el estado de las tareas y los plazos se presenta de forma clara, utilizando íconos y alertas que permiten a los usuarios estar al tanto de las fechas límite. También se ha mejorado la estructura del formulario de envío para hacerlo más fácil de usar y rápido.
+
+
 
 
 
