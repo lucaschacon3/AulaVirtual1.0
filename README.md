@@ -7,7 +7,8 @@
 
 - Lucas Chacón - Rol diseñador y programador
 - Lucas Sánchez - Rol diseñador y programador
-  **Fecha de Entrega**: 16/02/2025
+  
+**Fecha de Entrega**: 16/02/2025
 
 ---
 
