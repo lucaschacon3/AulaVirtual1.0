@@ -1,6 +1,6 @@
 # Documentación Técnica - Aula Virtual
 
-![Portada del proyecto](portada.jpg)
+![Portada del proyecto](./imagenes%20Documentacion/portada.jpg)
 
 **Título del Proyecto**: Aula Virtual con Tailwind CSS  
 **Integrantes del Equipo**:
@@ -13,13 +13,16 @@
 
 ## Índice
 
-1. Introducción
-2. Arquitectura del Proyecto
-3. Diseño del Proyecto
-4. Tecnologías Utilizadas
-5. Integración de Contenido Multimedia
-6. Responsividad y Accesibilidad
-7. Desafíos y Soluciones
+1. [Introducción](#introducción)
+2. [Arquitectura del Proyecto](#arquitectura-del-proyecto)
+3. [Diseño del Proyecto](#diseño-del-proyecto)
+4. [Tecnologías Utilizadas](#tecnologías-utilizadas)
+5. [Integración de Contenido Multimedia](#integración-de-contenido-multimedia)
+6. [Responsividad y Accesibilidad](#responsividad-y-accesibilidad)
+7. [Desafíos y Soluciones](#desafíos-y-soluciones)
+8. [Conclusión](#conclusión)
+
+
 
 ---
 
