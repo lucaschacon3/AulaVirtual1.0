@@ -221,6 +221,9 @@ Para implementar el nuevo diseño, se utilizó Tailwind CSS, una herramienta pod
 
 Tailwind CSS permitió una personalización rápida y una maquetación flexible, lo que facilitó la adaptación de los distintos componentes del aula virtual a diferentes tamaños de pantalla, garantizando una experiencia óptima tanto en dispositivos móviles como de escritorio.
 
+![comparaciones](<imagenes Documentacion/comparation_help.png>) ![comparaciones](<imagenes Documentacion/comparation_home.png>) ![comparaciones](<imagenes Documentacion/comparation_linear_algebra.png>) ![comparaciones](<imagenes Documentacion/comparation_login.png>) ![comparaciones](<imagenes Documentacion/comparation_subjet.png>) ![comparaciones](<imagenes Documentacion/comparation_submit.png>) ![comparaciones](<imagenes Documentacion/comparation_user.png>) ![comparaciones](<imagenes Documentacion/subjet_deployment.png>)
+
+
 ---
 
 ## Tecnologías Utilizadas
