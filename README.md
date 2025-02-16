@@ -119,8 +119,6 @@ Estructura del Proyecto
 └── README.md
 ```
 
-`¿ASÍ BASTA? --> Listado iframes`
-
 ### Dependencias utilizadas
 
 - **iframes**: para los vídeos incrustados en las secciones.
@@ -201,23 +199,27 @@ Estructura del Proyecto
 
 ## Diseño del Proyecto
 
-Descripción del diseño inicial en Figma: 
+***Descripción del diseño inicial en Figma***
+
 El diseño inicial del aula virtual fue creado utilizando Figma, con el objetivo de establecer una estructura visual y funcional para el usuario. Sin embargo, el diseño anterior presentaba varios problemas en cuanto a estética y usabilidad. El fondo era excesivamente cargado, lo que dificultaba la lectura y distría al usuario. La paleta de colores estaba basada principalmente en tonos rojos, lo que generaba una sensación de sobrecarga visual. Además, los botones eran obsoletos y poco amigables.
 
 Con el fin de mejorar la experiencia del usuario, se rediseñó por completo el aula virtual, destacando los siguientes aspectos:
 
-Nuevos colores: Se adoptó una paleta de colores más moderna y atractiva, centrada en tonos de cian y púrpura, con toques de amarillo para crear contraste. Esto no solo mejora la estética, sino que también facilita la distinción de elementos clave de la interfaz.
+- **Nuevos colores**: Se adoptó una paleta de colores más moderna y atractiva, centrada en tonos de cian y púrpura, con toques de amarillo para crear contraste. Esto no solo mejora la estética, sino que también facilita la distinción de elementos clave de la interfaz.
 
-Simplificación visual: Se redujo la complejidad de los fondos y se optó por un diseño más limpio, manteniendo el enfoque en el contenido sin distracciones innecesarias.
+- **Simplificación visual**: Se redujo la complejidad de los fondos y se optó por un diseño más limpio, manteniendo el enfoque en el contenido sin distracciones innecesarias.
 
-Botones modernos y funcionales: Se rediseñaron los botones para hacerlos más interactivos y fáciles de usar, asegurando que se ajustaran a la nueva estética sin sacrificar la funcionalidad.
+- **Botones modernos y funcionales**: Se rediseñaron los botones para hacerlos más interactivos y fáciles de usar, asegurando que se ajustaran a la nueva estética sin sacrificar la funcionalidad.
 
-Usabilidad y navegación intuitiva: El diseño final se centró en la usabilidad y la navegación intuitiva, buscando siempre facilitar la interacción con el aula virtual. Los prototipos en Figma reflejan esta orientación al usuario, priorizando la experiencia de aprendizaje.
+- **Usabilidad y navegación intuitiva**: El diseño final se centró en la usabilidad y la navegación intuitiva, buscando siempre facilitar la interacción con el aula virtual. Los prototipos en Figma reflejan esta orientación al usuario, priorizando la experiencia de aprendizaje.
 
-Traducción del diseño al código
+***Traducción del diseño al código***
+
 Para implementar el nuevo diseño, se utilizó Tailwind CSS, una herramienta que facilita la creación de interfaces visualmente atractivas y altamente funcionales a través de clases reutilizables.
 
 Tailwind CSS permitió una personalización rápida y una maquetación flexible, lo que facilitó la adaptación de los distintos componentes del aula virtual a diferentes tamaños de pantalla, garantizando una experiencia óptima tanto en dispositivos móviles como de escritorio.
+
+El diseño del header y del footer se implementó con SASS ya que es el mismo para todas las páginas quitando la de login y la del perfil de usuario.
 
 ### Comparación de la Pantalla de Inicio de Sesión
 ![comparaciones](./imagenes%20Documentacion/comparation_login.png)
@@ -281,7 +283,6 @@ Con el nuevo diseño, la página de álgebra lineal es más clara, con un contra
 
 El rediseño ha complementado más esta página. Ahora, los botones de entrega son mucho más visibles y se destacan con colores atractivos, como el cian y el fuxia con amarillo para resaltar, lo que facilita la interacción. Además, la información sobre el estado de las tareas y los plazos se presenta de forma clara, utilizando íconos que permiten a los usuarios estar al tanto de las fechas límite. También se ha mejorado la estructura del formulario de envío para hacerlo más fácil de usar y rápido.
 
-
 ---
 
 ## Tecnologías Utilizadas
@@ -304,19 +305,22 @@ El rediseño ha complementado más esta página. Ahora, los botones de entrega s
 - Audios en formato mp3.
 - Archivos descargables en formato PDF.
 
-### Gestión y optimización de estos recursos `FALTA`
+### Gestión y optimización de estos recursos
 
-- **Reutilización de código**:
-- Las img svg tienen pesan menos
+- Las img svg pesan menos y se adaptan mejor a cualquier tamaño sin perder calidad.
 
 ---
 
 ## Responsividad y Accesibilidad
 
-### Adaptación del diseño a dispositivos móviles y escritorio `REVISAR`
+### Adaptación del diseño a dispositivos móviles y escritorio
 
 - Uso de clases de Tailwind para diseño adaptable (flex, grid, media queries).
 - Optimización para diferentes resoluciones y tamaños de pantalla.
+- Los tamaños que hemos tenido en cuenta han sido:
+  - Diseño móvil: hasta 1024px de ancho (Tailwind es *mobile-first* por lo que por defecto los estilos son para el móvil).
+  - Diseño ordenador: desde 1024px de ancho (En Tailwind se indica con `class="lg:nombre_clase"`).
+  - Para la página de home y la de submit_task hemos usado el paso intermedio de 640px (`class="sm:nombre_clase"`).
 
 ### Medidas de accesibilidad aplicadas
 
@@ -332,11 +336,3 @@ El rediseño ha complementado más esta página. Ahora, los botones de entrega s
 
 - **Problema**: Al principio estábamos usando dos versiones de Tailwind distintas, uno la v3.4.17 y otro la v4.0. Esto causó que al intentar aplicar algunos estilos en el CSS se vieran en las páginas con la última versión, mientras que en las que tenían la versión anterior no se veían.
   - **Solución**: La solución fue muy sencilla, en los archivos con versión más antigua los cambiamos para que tuvieran la v4.0 en vez de la v3.4.17.
-
----
-
-`FALTA`
-
-## Conclusión
-
-El desarrollo del aula virtual con Tailwind CSS ha permitido construir una plataforma moderna, optimizada y accesible. Se lograron implementar buenas prácticas de desarrollo y diseño, garantizando una experiencia de usuario intuitiva y eficiente.
