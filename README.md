@@ -7,7 +7,7 @@
 
 - Lucas Chacón - Rol diseñador y programador
 - Lucas Sánchez - Rol diseñador y programador
-  
+
 **Fecha de Entrega**: 16/02/2025
 
 ---
@@ -23,34 +23,25 @@
 7. [Desafíos y Soluciones](#desafíos-y-soluciones)
 8. [Conclusión](#conclusión)
 
-
-
 ---
 
 ## Introducción
 
 ### Descripción del aula virtual
 
-El proyecto de Aula Virtual es una aplicación web realizada con Tailwind CSS, un framework que ayuda a crear interfaces de usuario de manera rápida y eficiente mediante el uso de clases predefinidas. Este framework permite diseñar componentes visuales de forma flexible y personalizable sin necesidad de escribir mucho código CSS desde cero.
-
-La aplicación está orientada a facilitar la interacción de los estudiantes con el aula, proporcionando un entorno digital donde se pueden compartir materiales educativos, realizar evaluaciones, y mantener un seguimiento constante del curso. Además, se ha implementado una estructura de navegación intuitiva, accesible desde diferentes dispositivos, para asegurar que los usuarios tengan una experiencia cómoda y funcional.
-
-Entre las principales características de este Aula Virtual se encuentran la gestión de tareas, la visualización de notas, un calendario, seguimiento activo del curso y el acceso a contenidos multimedia siendo inclusivo para personas con visión reducida. El uso de Tailwind CSS garantiza un diseño limpio, moderno y completamente responsive, adaptándose a cualquier tamaño de pantalla para una mejor usabilidad en móviles, tablets y formato escritorio.
-
-El aula virtual trata sobre diferentes asignaturas de matemáticas y nos vamos a enfocar en la de Álgebra.
+El diseño virtual en clase es una aplicación de Internet con CSS Tailwind, una estructura que lo ayuda a crear interfaces de usuario de manera rápida y efectiva mediante el uso de capas predefinidas. Esta estructura le permite desarrollar componentes visuales de manera flexible y puede configurar sin guardar una gran cantidad de códigos CSS desde el principio. Esta aplicación tiene como objetivo promover la interacción de los estudiantes con el aula, proporcionando un entorno digital, en el que puede mencionar el entorno digital en el que los materiales educativos y de evaluación y mantener el monitoreo continuo del curso. Además, se ha implementado una estructura de navegación visual desde diferentes dispositivos para garantizar que los usuarios tengan una experiencia conveniente y funcional. Entre las características principales de esta clase virtual se encuentran tareas, visualización de notas, calendarios, monitoreo activo de cursos y acceso a contenido multimedia, incluidas personas con baja visión. El uso de CSS Tailwind garantiza una estructura limpia, moderna y completamente respondida, adaptándose a cualquier tamaño de pantalla para obtener una mejor comodidad en dispositivos móviles, tabletas y formatos. La capa virtual está dedicada a diferentes matemáticas y nos centraremos en el álgebra.
 
 ### Objetivos del Proyecto
 
-- Desarrollar una plataforma fácil de usar para la gestión de cursos.
-- Implementar un diseño responsive y accesible para todos los dispositivos.
-- Facilitar la interacción de estudiantes con el aula.
-- Integrar un sistema de gestión de tareas y exámenes con retroalimentación automática.
-- Proporcionar una interfaz intuitiva para la navegación y visualización de contenidos educativos.
-- Incorporar funcionalidades de seguimiento de progreso de los estudiantes a través de gráficos y estadísticas.
-- Facilitar la creación y gestión de materiales educativos, como presentaciones, documentos y videos.
-- Asegurar la compatibilidad con diferentes navegadores web y dispositivos móviles.
-- Implementar una sección de ayuda con soporte técnico para asistir a los usuarios..- Fomentar la participación de los usuarios mediante el uso de gamificación y recompensas por logros educativos.
-- Asegurar la actualización continua de la plataforma, adaptándose a nuevas tecnologías y necesidades educativas.
+- Para desarrollar una plataforma ligera para administrar el curso.
+- Ingrese un proyecto que sea responsable y barato para todos los dispositivos.
+- Crear condiciones para la interacción de los estudiantes con la clase.
+- Sistema integrado de gestión de problemas y consulte con comentarios automáticos.
+- Proporcione una interfaz intuitiva para navegar y visualizar el contenido educativo. - Encienda la función de monitorear el desarrollo de los estudiantes a través de gráficos y estadísticas.
+- Cree condiciones para crear y administrar documentos educativos, como presentaciones, documentos y películas.
+- Proporciona compatibilidad con diferentes navegadores web y dispositivos móviles.
+- Ingrese un certificado con soporte técnico para ayudar a los usuarios.
+- Proporcione actualizaciones continuas de la plataforma, se adapte a nuevas tecnologías y necesidades educativas.
 
 ### Alcance del desarrollo en esta etapa
 
@@ -199,21 +190,22 @@ Estructura del Proyecto
 
 ## Diseño del Proyecto
 
-***Descripción del diseño inicial en Figma***
+**_Descripción del diseño inicial en Figma_**
 
 El diseño inicial del aula virtual fue creado utilizando Figma, con el objetivo de establecer una estructura visual y funcional para el usuario. Sin embargo, el diseño anterior presentaba varios problemas en cuanto a estética y usabilidad. El fondo era excesivamente cargado, lo que dificultaba la lectura y distría al usuario. La paleta de colores estaba basada principalmente en tonos rojos, lo que generaba una sensación de sobrecarga visual. Además, los botones eran obsoletos y poco amigables.
 
-Con el fin de mejorar la experiencia del usuario, se rediseñó por completo el aula virtual, destacando los siguientes aspectos:
 
-- **Nuevos colores**: Se adoptó una paleta de colores más moderna y atractiva, centrada en tonos de cian y púrpura, con toques de amarillo para crear contraste. Esto no solo mejora la estética, sino que también facilita la distinción de elementos clave de la interfaz.
+Para mejorar la experiencia del usuario, la capa virtual ha sido completamente rediseñada, enfatizando los siguientes aspectos:
 
-- **Simplificación visual**: Se redujo la complejidad de los fondos y se optó por un diseño más limpio, manteniendo el enfoque en el contenido sin distracciones innecesarias.
+- **Nuevo color**: Se ha aplicado una paleta más moderna y atractiva, centrándose en tonos azules y morados, con trazos amarillos para crear un contraste. Esto no solo mejora la estética, sino que también facilita la diferencia entre los elementos principales de la interfaz. 
 
-- **Botones modernos y funcionales**: Se rediseñaron los botones para hacerlos más interactivos y fáciles de usar, asegurando que se ajustaran a la nueva estética sin sacrificar la funcionalidad.
+- **Simplificación visual**: La complejidad de los fondos se ha reducido y se ha seleccionado un proyecto más limpio, manteniendo el enfoque de contenido sin distracción innecesaria.
 
-- **Usabilidad y navegación intuitiva**: El diseño final se centró en la usabilidad y la navegación intuitiva, buscando siempre facilitar la interacción con el aula virtual. Los prototipos en Figma reflejan esta orientación al usuario, priorizando la experiencia de aprendizaje.
+- **Botones modernos y funcionales**: Los botones se han rediseñado para hacerlos más interactivos y más fáciles de usar, asegurando que correspondan a la nueva estética sin reservar la funcionalidad. 
 
-***Traducción del diseño al código***
+- **Usabilidad y navegación visual**: El diseño final se centra en la navegación fácil de usar y visual, siempre tratando de reducir la interacción con la capa virtual. Los prototipos de Figma reflejan la orientación de este usuario, determinando la prioridad de la experiencia educativa.
+
+**_Traducción del diseño al código_**
 
 Para implementar el nuevo diseño, se utilizó Tailwind CSS, una herramienta que facilita la creación de interfaces visualmente atractivas y altamente funcionales a través de clases reutilizables.
 
@@ -222,6 +214,7 @@ Tailwind CSS permitió una personalización rápida y una maquetación flexible,
 El diseño del header y del footer se implementó con SASS ya que es el mismo para todas las páginas quitando la de login y la del perfil de usuario.
 
 ### Comparación de la Pantalla de Inicio de Sesión
+
 ![comparaciones](./imagenes%20Documentacion/comparation_login.png)
 
 En la versión anterior de la pantalla de inicio de sesión, el diseño estaba sobrecargado con muchos elementos y colores intensos que generaban distracción. Los campos de entrada y botones no estaban bien diferenciados, lo que hacía que el usuario tuviera que buscar para encontrar lo que necesitaba. Además, la tipografía y los colores no eran lo suficientemente contrastantes, dificultando la legibilidad, especialmente para usuarios con visión reducida.
@@ -231,6 +224,7 @@ En el nuevo diseño, se ha simplificado enormemente la estructura visual. Los bo
 ---
 
 ### Comparación de la Página de Usuario
+
 ![comparaciones](./imagenes%20Documentacion/comparation_user.png)
 
 El diseño anterior de la página de usuario estaba lleno de elementos con una estética muy anticuada. Los colores predominantes (rojos) creaban un ambiente visualmente denso y desordenado, lo que afectaba la experiencia del usuario.
@@ -240,6 +234,7 @@ El rediseño ha mejorado significativamente la organización de los contenidos. 
 ---
 
 ### Comparación de la Página de Inicio
+
 ![comparaciones](./imagenes%20Documentacion/comparation_home.png)
 
 En el nuevo diseño, la página de inicio se ha simplificado para enfocarse en lo esencial: la presentación de los cursos disponibles y los enlaces directos a las secciones principales. La jerarquía visual está mucho más definida, lo que permite a los usuarios encontrar rápidamente la información que necesitan. Los colores cian y púrpura proporcionan un contraste agradable y la tipografía es más moderna y legible.
@@ -247,6 +242,7 @@ En el nuevo diseño, la página de inicio se ha simplificado para enfocarse en l
 ---
 
 ### Comparación de la Página de Ayuda
+
 ![comparaciones](./imagenes%20Documentacion/comparation_help.png)
 
 En el rediseño, la página mantiene el mismo contenido, pero se ha optimizado visualmente con una nueva paleta de colores más suave y contrastante que mejora la legibilidad. Se han implementado pequeños ajustes, como el uso de un fondo más claro y la inclusión de nuevos iconos para hacer la navegación más visual y clara. Además, para mejorar la accesibilidad, se ha añadido un sistema de audio que describe el contenido y facilita la navegación a las personas ciegas o con dificultades visuales. El diseño sigue siendo sencillo, pero ahora más atractivo y funcional, permitiendo que los usuarios puedan acceder a la información de manera más rápida y eficiente.
@@ -254,6 +250,7 @@ En el rediseño, la página mantiene el mismo contenido, pero se ha optimizado v
 ---
 
 ### Comparación de la Página de la Asignatura
+
 ![comparaciones](./imagenes%20Documentacion/comparation_subjet.png)
 
 El diseño previo de la página de la asignatura estaba saturado con demasiados elementos visuales que competían entre sí, lo que dificultaba la navegación. Los botones y enlaces no eran fácilmente distinguibles, lo que generaba confusión sobre cómo acceder a los contenidos.
@@ -263,6 +260,7 @@ En el nuevo diseño, los materiales y recursos ahora están claramente segmentad
 ---
 
 ### Comparación del Despliegue de la Asignatura
+
 ![comparaciones](./imagenes%20Documentacion/subjet_deployment.png)
 
 Este es el desplegable de la asignatura, el cual lleva a los estudiantes a enlaces directos de tareas, teoría y la propia asignatura. En el diseño anterior, los enlaces y recursos estaban desorganizados y resultaban difíciles de encontrar.
@@ -272,6 +270,7 @@ Los enlaces están claramente estructurados y categorizados, permitiendo una nav
 ---
 
 ### Comparación de la Página de Álgebra Lineal
+
 ![comparaciones](./imagenes%20Documentacion/comparation_linear_algebra.png)
 
 Con el nuevo diseño, la página de álgebra lineal es más clara, con un contraste de colores mucho mejor, lo que hace que los contenidos sean fáciles de leer. Los videos y materiales ahora están mejor organizados, con una estructura visual coherente que facilita el acceso. Además, se ha implementado un sistema de navegación de fácil acceso para que los estudiantes puedan saltar entre secciones sin perderse.
@@ -279,6 +278,7 @@ Con el nuevo diseño, la página de álgebra lineal es más clara, con un contra
 ---
 
 ### Comparación de la Página de Entrega de Tareas
+
 ![comparaciones](./imagenes%20Documentacion/comparation_submit.png)
 
 El rediseño ha complementado más esta página. Ahora, los botones de entrega son mucho más visibles y se destacan con colores atractivos, como el cian y el fuxia con amarillo para resaltar, lo que facilita la interacción. Además, la información sobre el estado de las tareas y los plazos se presenta de forma clara, utilizando íconos que permiten a los usuarios estar al tanto de las fechas límite. También se ha mejorado la estructura del formulario de envío para hacerlo más fácil de usar y rápido.
@@ -318,7 +318,7 @@ El rediseño ha complementado más esta página. Ahora, los botones de entrega s
 - Uso de clases de Tailwind para diseño adaptable (flex, grid, media queries).
 - Optimización para diferentes resoluciones y tamaños de pantalla.
 - Los tamaños que hemos tenido en cuenta han sido:
-  - Diseño móvil: hasta 1024px de ancho (Tailwind es *mobile-first* por lo que por defecto los estilos son para el móvil).
+  - Diseño móvil: hasta 1024px de ancho (Tailwind es _mobile-first_ por lo que por defecto los estilos son para el móvil).
   - Diseño ordenador: desde 1024px de ancho (En Tailwind se indica con `class="lg:nombre_clase"`).
   - Para la página de home y la de submit_task hemos usado el paso intermedio de 640px (`class="sm:nombre_clase"`).
 
