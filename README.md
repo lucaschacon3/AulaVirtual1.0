@@ -1,5 +1,7 @@
 # Documentación Técnica - Aula Virtual
 
+##Enlace FIGMA (https://www.figma.com/design/P4VQQfrHCStX575haD8IvE/AulaVirtual1.0?node-id=0-1&p=f&t=VvwrYf9ojQCg7R1O-0)
+
 ![Portada del proyecto](./imagenes%20Documentacion/portada.jpg)
 
 **Título del Proyecto**: Aula Virtual con Tailwind CSS  
